@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `🧞‍♂️ Welcome to DEV.SH !`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Shiloh`,
+      summary: `who lives and in South Korea learning Front-end Engineering.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Archive of development`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `greenish0902`,
     },
   },
   plugins: [
@@ -18,6 +18,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/Algorithm`,
+        name: `Algorithm`,
       },
     },
     {
