@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Feb 2022 11:16:38 GMT</lastBuildDate><item><title><![CDATA[[boj] 1949. 우수 마을 (node.js)]]></title><description><![CDATA[문제 요약 BOJ 194…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1949/BOJ-1949/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1949/BOJ-1949/</guid><pubDate>Tue, 08 Feb 2022 17:30:00 GMT</pubDate><content:encoded>&lt;h3&gt;문제 요약&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Feb 2022 11:44:35 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 1.1 강의소개]]></title><description><![CDATA[운영체제 (Operating System, OS…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/00Introduction/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/00Introduction/</guid><pubDate>Tue, 08 Feb 2022 20:40:00 GMT</pubDate><content:encoded>&lt;h1&gt;운영체제 (Operating System, OS)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;운영체제는 컴퓨터 &lt;strong&gt;하드웨어 바로 위&lt;/strong&gt;에 설치되는 &lt;strong&gt;소프트웨어 계층&lt;/strong&gt;으로서 모든 컴퓨터 시스템의 &lt;strong&gt;필수&lt;/strong&gt;적인 부분이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;관점&lt;/h2&gt;
+&lt;p&gt;쉽게 이해하는 법!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;살아 움직이는 착한 사람
+&lt;ul&gt;
+&lt;li&gt;“여러분이 운영체제라고 생각하면 편해요”
+&lt;ul&gt;
+&lt;li&gt;내가 하드웨어를 어떻게 관리해야 할까?&lt;/li&gt;
+&lt;li&gt;내가 사용자들을 어떻게 해 주면 편리하게 사용할 수 있을까?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;통치자
+&lt;ul&gt;
+&lt;li&gt;컴퓨터 세계를 통치하는 중요한 소프트웨어!&lt;/li&gt;
+&lt;li&gt;어떻게 잘 관리(통치)할 것인가?&lt;/li&gt;
+&lt;li&gt;소프트웨어가 가득한 이 세상에서 어떻게 잘 관리할 것인가?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;사람
+&lt;ul&gt;
+&lt;li&gt;어떻게 삶, 스케줄, 돈을 관리할 것인가?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;운영체제란 무엇인가?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;다른 모든 소프트웨어와 하드웨어를 연결하는 소프트웨어 계층이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;운영체제의 목표&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(윗단) 컴퓨터 시스템을 편리하게 사용할 수 있는 환경을 제공.
+&lt;ul&gt;
+&lt;li&gt;운영체제는 동시 사용자, 프로그램들이 각각 &lt;strong&gt;독자적 컴퓨터에서 수행되는 것 같은 환상&lt;/strong&gt;을 제공&lt;/li&gt;
+&lt;li&gt;하드웨어를 직접 다루는 복잡한 부분을 운영체제가 대행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(아랫단) 운영체제의 핵심 기능: 컴퓨터 시스템의 &lt;strong&gt;자원&lt;/strong&gt;을 효율적으로 관리
+&lt;ul&gt;
+&lt;li&gt;자원: CPU(프로세스), 메모리(기억장치), 입출력장치 등&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;역할&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU 스케줄링
+&lt;ul&gt;
+&lt;li&gt;각각의 프로그램에 짧은 시간 간격으로 CPU를 번갈아가면서 할당&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;메인 메모리
+&lt;ul&gt;
+&lt;li&gt;여러 프로그램이 동시에 실행되야 하므로, 프로그램은 메모리를 조금씩 쪼개서 올라가 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;⇒ 한정된 자원을 적절히 분배하는 문제
+&lt;ul&gt;
+&lt;li&gt;어떤 단위로, 순서로, 얼마나 CPU를 할당 &amp;#x26;&amp;#x26; 메모리를 줄 것인가?&lt;/li&gt;
+&lt;li&gt;너무 치우치지도 않게, 너무 부족하지도 않게, 적절한 균형 잘 유지해야 하는 ‘통치’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 1949. 우수 마을 (node.js)]]></title><description><![CDATA[문제 요약 BOJ 194…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1949/BOJ-1949/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1949/BOJ-1949/</guid><pubDate>Tue, 08 Feb 2022 17:30:00 GMT</pubDate><content:encoded>&lt;h3&gt;문제 요약&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1949&quot;&gt;BOJ 1949 우수 마을&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;입력&lt;/strong&gt;: 마을의 수, 연결된 마을들, 주민 수가 주어진다.&lt;/li&gt;
