@@ -16,15 +16,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/BOJ-node-js`,
+        name: `Algorithm`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/Algorithm`,
-        name: `Algorithm`,
+        path: `${__dirname}/content/Operating-System`,
+        name: `blog`,
       },
     },
     {
