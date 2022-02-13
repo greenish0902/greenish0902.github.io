@@ -1,4 +1,169 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Feb 2022 11:29:23 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 4. System Structure & Program Execution 2]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/04-System_Program_02/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/04-System_Program_02/</guid><pubDate>Sat, 12 Feb 2022 20:25:30 GMT</pubDate><content:encoded>&lt;h1&gt;입출력&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Feb 2022 11:30:43 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 5. Process1]]></title><description><![CDATA[프로세스 프로세스: 실행 중인 프로그램 프로세스의 문맥: 특정 시점에서의 CPU 수행 상태를 나타내는 하드웨어 문맥 프로세스의 문맥 (Context) 프로세스의 상태를 알기 위해 필요한 모든 요소들을 뜻하며, 하드웨어 문맥: CPU…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/05-Process/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/05-Process/</guid><pubDate>Sun, 13 Feb 2022 20:30:30 GMT</pubDate><content:encoded>&lt;h1&gt;프로세스&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;프로세스: 실행 중인 프로그램&lt;/li&gt;
+&lt;li&gt;프로세스의 문맥: 특정 시점에서의 CPU 수행 상태를 나타내는 하드웨어 문맥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;프로세스의 문맥 (Context)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;프로세스의 상태를 알기 위해 필요한 모든 요소들을 뜻하며,&lt;/li&gt;
+&lt;li&gt;하드웨어 문맥: CPU 수행 상태
+&lt;ul&gt;
+&lt;li&gt;program counter (register)가 코드의 어디를 가리키는지 (수행 중인지),&lt;/li&gt;
+&lt;li&gt;register&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;프로세스의 주소공간: code, data, stack
+&lt;ul&gt;
+&lt;li&gt;stack이 어느 정도 쌓였는지, 현재 data의 변수값,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;운영체제; 커널 자료구조: PCB, Kernel Stack&lt;/li&gt;
+&lt;li&gt;이와 같은 요소들을 통해 프로세스의 상태 -&gt; 문맥을 알아낼 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;프로세스의 상태 (State)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;프로세스는 상태가 변경되며 수행된다.&lt;/li&gt;
+&lt;li&gt;running (CPU를 잡고 수행중)&lt;/li&gt;
+&lt;li&gt;ready (기다리는 중, 다른 모든 준비 완료; CPU만 닫으면 되는 상태)&lt;/li&gt;
+&lt;li&gt;blocked (wait, sleep)&lt;/li&gt;
+&lt;li&gt;기타: new (생성중), terminated (종료중)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;프로세스의 문맥 교환 (Context Switch)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;프로세스 A&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;프로세스 B&lt;/code&gt;로 CPU를 넘겨주는 것&lt;/li&gt;
+&lt;li&gt;CPU가 프로세스 간에 넘어갈 때, &lt;strong&gt;운영체제&lt;/strong&gt;는 &lt;strong&gt;PCB&lt;/strong&gt;에
+&lt;ul&gt;
+&lt;li&gt;(내어주는 프로세스의 상태는) 저장하고,&lt;/li&gt;
+&lt;li&gt;(새롭게 얻을 프로세스의 상태는) 읽어옴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;유의:
+&lt;ul&gt;
+&lt;li&gt;system call 또는 interrupt 발생이 항상 문맥 교환인 것은 아님!&lt;/li&gt;
+&lt;li&gt;타 프로그램에 넘기기 위한 의도로 timer interrupt 하는 것 -&gt; Context Switch (O)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Scheduler&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Short-term: CPU Scheduler, 프로세스에 &lt;strong&gt;CPU를&lt;/strong&gt; 주는 문제.
+&lt;ul&gt;
+&lt;li&gt;running 할 다음 프로세스를 결정&lt;/li&gt;
+&lt;li&gt;단시간 단위(millisecond).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Long-term: Job Scheduler, 프로세스에 &lt;strong&gt;Memory를&lt;/strong&gt; 주는 문제.
+&lt;ul&gt;
+&lt;li&gt;메모리 admit(new -&gt; ready) 여부를 결정&lt;/li&gt;
+&lt;li&gt;보통 시분할 시스템에는 없음 =&gt; Medium-term!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Medium-term: Swapper, 프로세스에서 &lt;strong&gt;메모리를 뺏는&lt;/strong&gt; (디스크로 쫓아내는) 문제.
+&lt;ul&gt;
+&lt;li&gt;메모리에 너무 많이 올라가 있으면 여유공간 마련을 위해 프로세스를 통째로 메모리 -&gt; 디스크로 쫓아내기&lt;/li&gt;
+&lt;li&gt;degree of multiprogramming: 메모리에 올라간 프로세스의 수 제어&lt;/li&gt;
+&lt;li&gt;suspended 상태: 메모리를 뺏겨서 정지되어 디스크에 swap-out된 상태. 더이상의 CPU 작업은 진행되지 않음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Blocked vs Suspended
+&lt;ul&gt;
+&lt;li&gt;Blocked: 요청작업 정지, 끝나면 ready 가능.&lt;/li&gt;
+&lt;li&gt;Suspended: 외부에서 정지(inactive), 외부에서 active 재개해줘야 작업으로 돌아갈 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;cf. 표현법 주의: 사용자 프로세스가 운영체제 커널에서 수행되고 있다. (O)
+&lt;ul&gt;
+&lt;li&gt;운영체제가 running (X)
+&lt;ul&gt;
+&lt;li&gt;‘상태’는 운영체제의 상태가 아닌 Process의 상태를 가리킨다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 2470. 두 용액 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 2470. 두 용액 (node.js) 주어진 숫자들 중 서로 다른 두 개를 조건에 맞게 출력하는 문제 조건: 합이 0이거나 0에 가장 가까운 조합 찾기 풀이 일반적으로 이분 탐색으로 조건(최소 거리 갱신)과 L, R…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-2470/index02/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-2470/index02/</guid><pubDate>Sun, 13 Feb 2022 11:17:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABD0lEQVQoz5WSXUvCcBjF9xHNXuzFuoqgoC7qrhvHNuqiIMKLoPoi6X/TqWRuS/wYXoRvqFu+7BfMCWFbuIvDc/Pw4xzOkXyxS6T0PXx9P7yh4n5/SYqDIXbgLQWFNBTT+CKzFlyKhm0zN89wW490Wk+MLA3fOFxAEztcuiufMGneMnRUJrYCRgZKB2AeQSmbEFjcYvh+yVc9z9iU6VcV2vUXutYzAzvPTD8PUkRFj3U4ql3Q/3ig13hlYFzTqcj0Kjm6VY2pOA1+fLEm0A8jfzsarqPh2TLe5x1TOwflLIjN2GJiI89qV7jNe8aWimspuA0Vz7lhbh7DsvEkswlcFjZWlFpETTSbP8Ne1f8D/wFuiGvPkEU8hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png&quot;
+        srcset=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/c26ae/feb_22.png 158w,
+/static/59a50708709f66f23fa6abe4756ca4b1/6bdcf/feb_22.png 315w,
+/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png 630w,
+/static/59a50708709f66f23fa6abe4756ca4b1/40601/feb_22.png 945w,
+/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png 988w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;문제 요약&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2470&quot;&gt;[boj] 2470. 두 용액 (node.js)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;주어진 숫자들 중 서로 다른 두 개를 조건에 맞게 출력하는 문제&lt;/li&gt;
+&lt;li&gt;조건: 합이 0이거나 0에 가장 가까운 조합 찾기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;풀이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일반적으로 &lt;strong&gt;이분 탐색&lt;/strong&gt;으로 조건(최소 거리 갱신)과 L, R을 통해 풀이했던 2470번 문제를&lt;/li&gt;
+&lt;li&gt;또 다른 풀이법인 &lt;strong&gt;두 포인터&lt;/strong&gt;를 활용해 풀이하였다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;내 풀이&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; readline &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;readline&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; rl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; readline&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createInterface&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdout&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; cnt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; stdin&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;cnt&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; stdin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  stdin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Number&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;Infinity&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; temp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;temp&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    temp &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;temp &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;합이 0이거나 그에 가장 가까운 경우를 출력해야 하므로, &lt;code class=&quot;language-text&quot;&gt;arr[L] + arr[R]&lt;/code&gt;을 매번 확인하여 L, R을 갱신해주었다.&lt;/li&gt;
+&lt;li&gt;문제 알고리즘 구현도 중요하지만 &lt;code class=&quot;language-text&quot;&gt;let sum = Infinity;&lt;/code&gt; 부분을 실수하여 여러 번 다시 풀었다. 문제의 sum은 두 수의 합이니 최댓값 * 2, 즉 Infinity 로 설정해 두는 것이 안전하다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 4. System Structure & Program Execution 2]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/04-System_Program_02/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/04-System_Program_02/</guid><pubDate>Sat, 12 Feb 2022 20:25:30 GMT</pubDate><content:encoded>&lt;h1&gt;입출력&lt;/h1&gt;
 &lt;h2&gt;동기식 &amp;#x26; 비동기식 입출력&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;동기식 입출력은 입출력 작업을 완료하기까지 기다렸다 제어를 넘겨주는 방식이고,&lt;/li&gt;
