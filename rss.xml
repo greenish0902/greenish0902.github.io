@@ -1,4 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 23 Feb 2022 01:08:40 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 11. CPU Scheduling 2]]></title><description><![CDATA[CPU-burst Time의 분포, Schedulling Algorithms, Round Robin(RR), Multilevel Queue, Multilevel Feedback Queue, Multi-Processor Scheduling, Real…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/11-CPU_Scheduling_2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/11-CPU_Scheduling_2/</guid><pubDate>Wed, 23 Feb 2022 10:09:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 24 Feb 2022 02:24:58 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 12. Process Synchronization 1]]></title><description><![CDATA[컴퓨터 시스템 데이터의 접근 일반적인 접근 데이터 저장된 위치에서 읽어와서 연산된 결과를 다시 위치에 저장(반영) 누가 먼저 읽어갔느냐에 따른 결과 변동 가능성 ⇒ Process Synchronization 문제 발생 관점 CPU…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/12-Process_Synchronization_1/index01/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/12-Process_Synchronization_1/index01/</guid><pubDate>Thu, 24 Feb 2022 11:25:00 GMT</pubDate><content:encoded>&lt;h1&gt;컴퓨터 시스템 데이터의 접근&lt;/h1&gt;
+&lt;h3&gt;일반적인 접근&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;데이터 저장된 위치에서&lt;/li&gt;
+&lt;li&gt;읽어와서&lt;/li&gt;
+&lt;li&gt;연산된 결과를 다시 위치에 저장(반영)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;누가 먼저 읽어갔느냐에 따른 결과 변동 가능성&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⇒ Process Synchronization 문제 발생&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;관점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU - 메모리 간 접근: 읽어들여서 연산하고 다시 저장&lt;/li&gt;
+&lt;li&gt;컴퓨터가 하드디스크 (IO장치)에 접근&lt;/li&gt;
+&lt;li&gt;프로세스 - 주소공간 간 접근&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Race Condition&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;메모리 주소를 공유하는 프로세스가 여러 개인 경우&lt;/li&gt;
+&lt;li&gt;일반적으로 프로세스는 자기 주소공간을 가지므로 문제 발생 거의 없음, 그러나 운영체제 system call하는 경우 커널의 코드 실행: 데이터를 읽어서 루틴 수행. ⇒ Race Condition 문제&lt;/li&gt;
+&lt;li&gt;커널의 코드 실행 중에 interrupt 가 발생하는 경우: 커널 실행 중 또 커널코드(interrupt) 실행하게 됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Case of Race Condition&lt;/h1&gt;
+&lt;h3&gt;Case 1: interrupt handler - kernel&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;커널의 데이터를 양쪽에서 건드리는 도중에 CPU 처리
+&lt;ul&gt;
+&lt;li&gt;커널모드 running 도중에 interrupt 가 발생하여 인터럽트 처리 루틴이 수행됨 → 양쪽 다 커널의 코드이므로 kernel address space를 공유하는 셈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;해결 방안: 중요한 값 도중에는 interrupt 처리를 하지 않고, 처리 끝낸 후에 interrupt 하도록 해결&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Case 2: CPU 할당 시간&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;할당된 시간이 끝난 시점에 프로세스는 system call로 커널 코드가 실행 중인 경우 → 또 다른 프로세스에서 또 커널 코드를 건드리게 되는 문제 발생&lt;/li&gt;
+&lt;li&gt;해결: 커널 모드에 있을 때는 할당시간이 끝나도 CPU를 뺏기지 않도록 함.
+&lt;ul&gt;
+&lt;li&gt;커널 모드가 끝나고 user 모드로 나올 때 CPU 를 빼앗음.&lt;/li&gt;
+&lt;li&gt;time sharing system은 realtime이 아니므로 약간의 시간 오차는 있겠지만 문제 해결이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Case 3: CPU가 여러 개인 환경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;작업 주체 CPU가 여러 개이므로 앞선 방법처럼 interrupt 를 막는 방식으로 해결이 불가능함.&lt;/li&gt;
+&lt;li&gt;해결: lock
+&lt;ol&gt;
+&lt;li&gt;개별 데이터에 대한 lock: 수정중인 데이터는 lock을 걸어서 더 이상 접근하지 못하도록 함. 추후 unlock.&lt;/li&gt;
+&lt;li&gt;커널 접근에 대한 lock: 커널 전체를 하나의 lock으로 막고, 커널에서 나올 때 unlock
+&lt;ul&gt;
+&lt;li&gt;매우 비효율적; CPU는 여러 개이지만 한 번에 한 개의 CPU만 커널에 접근 가능하다는 한계&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Process Synchronization&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;공유 데이터 동시 접근은 데이터의 inconsistiency를 발생시킬 수 있다.&lt;/li&gt;
+&lt;li&gt;협력 프로세스 간 실행 순서 정하는 mechanism이 필요하다.&lt;/li&gt;
+&lt;li&gt;프로세스들이 동시에 공유 데이터에 접근하는 Race condition 상황의 발생을 막기 위해서 Synchronization 이 필요하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Critical Section&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Critical Section (임계구역): 공유 데이터에 접근하는 코드를 뜻함&lt;/li&gt;
+&lt;li&gt;코드는 임계구역인지 아닌지에 따라 분류 가능&lt;/li&gt;
+&lt;li&gt;synchronization 문제 해결 위한 software적인 방법 (알고리즘) 이 존재 (다음 강의)&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 1697. 숨바꼭질 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 1697. 숨바꼭질 (node.js) 주어진 두 지점 간 이동방법이 3가지로 정해져 있을 때, 시작점부터 도착점에 도달 가능한 최단 시간은? 풀이…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1697/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1697/</guid><pubDate>Thu, 24 Feb 2022 10:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABD0lEQVQoz5WSXUvCcBjF9xHNXuzFuoqgoC7qrhvHNuqiIMKLoPoi6X/TqWRuS/wYXoRvqFu+7BfMCWFbuIvDc/Pw4xzOkXyxS6T0PXx9P7yh4n5/SYqDIXbgLQWFNBTT+CKzFlyKhm0zN89wW490Wk+MLA3fOFxAEztcuiufMGneMnRUJrYCRgZKB2AeQSmbEFjcYvh+yVc9z9iU6VcV2vUXutYzAzvPTD8PUkRFj3U4ql3Q/3ig13hlYFzTqcj0Kjm6VY2pOA1+fLEm0A8jfzsarqPh2TLe5x1TOwflLIjN2GJiI89qV7jNe8aWimspuA0Vz7lhbh7DsvEkswlcFjZWlFpETTSbP8Ne1f8D/wFuiGvPkEU8hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png&quot;
+        srcset=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/c26ae/feb_22.png 158w,
+/static/59a50708709f66f23fa6abe4756ca4b1/6bdcf/feb_22.png 315w,
+/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png 630w,
+/static/59a50708709f66f23fa6abe4756ca4b1/40601/feb_22.png 945w,
+/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png 988w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;문제 요약&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1697&quot;&gt;[boj] 1697. 숨바꼭질 (node.js)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;주어진 두 지점 간 이동방법이 3가지로 정해져 있을 때, 시작점부터 도착점에 도달 가능한 최단 시간은?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;풀이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;1초에 &lt;code class=&quot;language-text&quot;&gt; const getCand = (node) =&gt; [node - 1, node + 1, node * 2];&lt;/code&gt; 이 세 가지의 후보 중 하나로 이동 가능하다. 따라서 이를 함수로 만들어 활용했고, BFS로 time[] 배열에 값을 갱신하여 queue에 입력하는 노드가 도착 노드인 경우 바로 return 해 주었다.&lt;/li&gt;
+&lt;li&gt;점의 위치가 0 ≤ N ≤ 100,000 으로 고정되어 있음을 유의하고 불필요한 지점을 +-무한대로 탐색하는 일을 방지해 주어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;내 풀이&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; readline &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;readline&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; rl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; readline&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createInterface&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdout&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; cnt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; stdin&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;cnt&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Number&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getCand&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; node &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; stdin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  stdin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fin&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bfs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; fin&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; time &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; visited &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    visited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      node &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; cand &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getCand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; elem &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; cand&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;visited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;elem&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; elem &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; elem &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;continue&lt;/span&gt;
+        visited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;elem&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;elem&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;elem &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; fin&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; time&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;fin&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;elem&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;주절주절&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;처음에 최대숫자의 자릿수를 잘못 보고 조건에 0을 하나 더 붙이고 풀어, 불필요한 탐색이 일어나 시간초과가 계속 발생했다. 숫자 제대로 확인하자!&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 11. CPU Scheduling 2]]></title><description><![CDATA[CPU-burst Time의 분포, Schedulling Algorithms, Round Robin(RR), Multilevel Queue, Multilevel Feedback Queue, Multi-Processor Scheduling, Real…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/11-CPU_Scheduling_2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/11-CPU_Scheduling_2/</guid><pubDate>Wed, 23 Feb 2022 10:09:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;CPU-burst Time의 분포, Schedulling Algorithms, Round Robin(RR), Multilevel Queue, Multilevel Feedback Queue, Multi-Processor Scheduling, Real-time Scheduling, Example of Non-Preemptive SJF, Thread Scheduling, Algorithm Evaluation, 39:12&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1&gt;복습&lt;/h1&gt;
