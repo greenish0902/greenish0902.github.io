@@ -1,4 +1,203 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 01 Mar 2022 12:51:17 GMT</lastBuildDate><item><title><![CDATA[[boj] 3055. 탈출 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 3055. 탈출 (node.js) 고슼도치가 비버 굴로 탈출 가능한 최단 시간을 출력하라! 탈출 불가시 “KAKTUS” 출력 풀이 BFS: 이동 가능한 4방향에 대해 탐색 if 조건으로 불필요한 탐색 최소화 (continue…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</guid><pubDate>Tue, 01 Mar 2022 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 02 Mar 2022 09:46:18 GMT</lastBuildDate><item><title><![CDATA[[KOCW] 운영체제 (반효경, 2014) - 14. Process Synchronization 3]]></title><description><![CDATA[Semaphores, Implementation, Classical Problems of Syncronization, Bounded-Buffer Problem, Readers-Writers Problem, Dining-Philosophers…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/14-Process_Synchronization_3/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/14-Process_Synchronization_3/</guid><pubDate>Wed, 02 Mar 2022 18:45:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Semaphores, Implementation, Classical Problems of Syncronization, Bounded-Buffer Problem, Readers-Writers Problem, Dining-Philosophers Problem, Monitor&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;Classical Problems of Synchronization&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Bounded Buffer Problem&lt;/li&gt;
+&lt;li&gt;Readers and Writers Problem&lt;/li&gt;
+&lt;li&gt;Dining-Philosophers Problem&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;01 Bounded Buffer Problem&lt;/h2&gt;
+&lt;h3&gt;&lt;strong&gt;Bounded Buffer&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;버퍼: 임시 데이터 저장공간, 크기가 유한함&lt;/li&gt;
+&lt;li&gt;2가지 종류의 프로세스: producer, consumer 각각 여러 개
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Producer, 생산자:&lt;/strong&gt; 공유 버퍼에 데이터 만들어서 집어넣는 역할&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer, 소비자:&lt;/strong&gt; 데이터를 꺼내가는 역할&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Synchronization 문제 예시&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;공유 데이터 접근&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;공유 버퍼에 생산자가 동시에 도착하는 경우?
+&lt;ul&gt;
+&lt;li&gt;비어 있는 버퍼를 확인하고, 데이터를 만들어 집어넣는 과정에 lock &amp;#x26; unlock 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;소비자가 동시에 도착하는 경우?
+&lt;ul&gt;
+&lt;li&gt;lock &amp;#x26; unlock 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bounded (유한) 문제
+&lt;ul&gt;
+&lt;li&gt;생산자 입장에서의 자원: 비어있는 버퍼의 개수&lt;/li&gt;
+&lt;li&gt;소비자 입장에서의 자원: 내용이 있는 자원의 개수&lt;/li&gt;
+&lt;li&gt;문제 예시
+&lt;ul&gt;
+&lt;li&gt;생산자가 도착해서 공유 버퍼가 다 찼는데 또 생산자가 도착하는 경우
+&lt;ul&gt;
+&lt;li&gt;꽉 찬 버퍼 → 생산자 입장에서는 available 자원이 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;소비자가 도착해서 내용을 다 꺼내갔는데 또 소비자가 도착하는 경우
+&lt;ul&gt;
+&lt;li&gt;빈 버퍼 → 소비자 입장에서는 available 자원이 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;따라서, 두 가지 문제를 위한 semaphore 변수 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Semaphore: Synchronization Variables&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;mutual exclusion:&lt;/strong&gt; 동시 접근을 막기 위한 lock &amp;#x26; unlock&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;resource count:&lt;/strong&gt; 꽉 차거나 비었을 때 가용자원의 개수를 세는 counting Semaphore
+&lt;ul&gt;
+&lt;li&gt;내용이 들어있는 버퍼의 개수를 조정하는 변수: 남은 full/empty buffer의 개수 조정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;구조&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;버퍼 확인&lt;/li&gt;
+&lt;li&gt;있으면 lock / 없으면 기다리기&lt;/li&gt;
+&lt;li&gt;empty / full 버퍼 접근, 조작&lt;/li&gt;
+&lt;li&gt;Unlock&lt;/li&gt;
+&lt;li&gt;full/empty 버퍼 개수 증가&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;02 Readers-Writers Problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;이 문제에서는
+&lt;ul&gt;
+&lt;li&gt;공유 데이터 == DB&lt;/li&gt;
+&lt;li&gt;process: DB에 읽고 쓰는 프로세스&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lock / Unlock 활용한 구현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;작업 간 차이점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Writers: 동시에 쓸 수 &lt;strong&gt;없음&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Readers: 동시에 읽을 수 &lt;strong&gt;있음!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;따라서 읽는 건 동시에 작업 가능하도록 구현하는 것이 더 바람직하다 😆
+&lt;ul&gt;
+&lt;li&gt;→ 단순하게 항상 P연산 lock - V연산 unlock 보다 효율적&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;코드 구조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;공유 데이터 &lt;strong&gt;db, mutex&lt;/strong&gt; ← binary Semaphore 사용해서 P, V연산 구현&lt;/li&gt;
+&lt;li&gt;공유 변수 &lt;strong&gt;readcount&lt;/strong&gt;: DB를 읽고 있는 reader의 개수
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;(readcount == 1)&lt;/code&gt; → P(db)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;(readcount == 0)&lt;/code&gt; → V(db)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;binary Semaphore used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;db&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;DB에 대한 lock, unlock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mutex&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;readcount 변수에 대한 lock, unlock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Starvation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;문제점
+&lt;ul&gt;
+&lt;li&gt;Starvation: reader 처리로 인해 writer가 오랫동안 기다려야만 하는 상황 발생 가능성&lt;/li&gt;
+&lt;li&gt;그렇다고 순서대로 처리하면 비효율적인 알고리즘이 된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;해결
+&lt;ul&gt;
+&lt;li&gt;해당 코드 내에서는 중간에 빠져나가서 unlock 하고 writer 가 들어올 수 있게끔 적당한 정도에서 끊어주는 방식으로 구현할 수 있다. (해당 예제)&lt;/li&gt;
+&lt;li&gt;그 외에도 여러 개선 방향이 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;03 Dining-Philosophers Problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;양쪽 젓가락을 잡아야만 밥을 먹을 수 있는 문제&lt;/li&gt;
+&lt;li&gt;하나의 공유 자원(한쪽 젓가락)을 동시에 두 명이 잡을 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Deadlock&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;모든 철학자가 동시에 왼쪽 젓가락을 잡았으면, 배가 부를 때까지 놓지 못하는데 - 이 경우 아무도 오른쪽 젓가락을 잡을 수 없다.&lt;/li&gt;
+&lt;li&gt;deadlock 해결책
+&lt;ul&gt;
+&lt;li&gt;n명의 철학자만이 동시에 테이블에 앉을 수 있도록 한다.&lt;/li&gt;
+&lt;li&gt;양쪽 젓가락을 잡을 수 있는 경우에만 권한을 준다.&lt;/li&gt;
+&lt;li&gt;젓가락 간 우선순위 부여
+&lt;ul&gt;
+&lt;li&gt;짝수 - 왼쪽, 홀수 - 오른쪽 젓가락부터 잡도록 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Monitor&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Semaphore 의 어려움
+&lt;ul&gt;
+&lt;li&gt;실수가 치명적이며, 디버깅, 실수 검증이 어렵다.&lt;/li&gt;
+&lt;li&gt;→ 한 치의 실수 없이 항상 정확한 코딩이 요구되는 까다로움!&lt;/li&gt;
+&lt;li&gt;⇒ 이 문제를 보다 쉽고 편리하게 구현한 Monitor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Monitor: 프로그래밍 언어 차원에서 문제의 해결을 목표로 하는 high-level synchronization constructure
+&lt;ul&gt;
+&lt;li&gt;내부에 공유 데이터를 선언하고, 내부 함수를 통해 접근할 수 있다.
+&lt;ul&gt;
+&lt;li&gt;따라서 내부에 정의되어 있으므로 해당 Monitor 내부 procedure 를 통해서만 내부 공유데이터에 접근할 수 있다.&lt;/li&gt;
+&lt;li&gt;모니터 내부의 procedure은 동시에 수행될 수 없다.
+&lt;ul&gt;
+&lt;li&gt;→ 그러므로 직접 &lt;strong&gt;lock을 걸고 풀 필요가 없다! ⭐️&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Semaphore과의 차이점
+&lt;ul&gt;
+&lt;li&gt;Lock을 걸 필요가 없다&lt;/li&gt;
+&lt;li&gt;이해가 쉽다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;condition variable
+&lt;ul&gt;
+&lt;li&gt;semaphore 변수와 유사한 역할&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;구현:&lt;/strong&gt; 자원의 여분이 있으면 주고 / 없으면 변수를 기다리게 하는 함수를 정의 / 빠져나가면 signal 호출로 빠져나갈 수 있도록 구현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;monitor 안에서는 하나의 프로세스만 활성화되므로
+&lt;ul&gt;
+&lt;li&gt;변수가 queue에 줄 서 있는 프로세스를 넣고, 깨워주고의 역할
+&lt;ul&gt;
+&lt;li&gt;큐에 줄 서서 기다리면 잠들었다 - 큐에 줄 서 있는 프로세스를 하나 깨워주기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 3055. 탈출 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 3055. 탈출 (node.js) 고슼도치가 비버 굴로 탈출 가능한 최단 시간을 출력하라! 탈출 불가시 “KAKTUS” 출력 풀이 BFS: 이동 가능한 4방향에 대해 탐색 if 조건으로 불필요한 탐색 최소화 (continue…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</guid><pubDate>Tue, 01 Mar 2022 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
