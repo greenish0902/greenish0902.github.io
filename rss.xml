@@ -1,35 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Mar 2022 11:00:22 GMT</lastBuildDate><item><title><![CDATA[[boj] 1759. 암호 만들기 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 1759. 암호 만들기 (node.js) C개의 서로 다른 문자들이 주어질 때, 주어진 규칙을 만족하는 L 자릿수 암호의 후보들을 출력하는 문제 풀이 Brute Force…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1759/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1759/</guid><pubDate>Thu, 03 Mar 2022 19:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABD0lEQVQoz5WSXUvCcBjF9xHNXuzFuoqgoC7qrhvHNuqiIMKLoPoi6X/TqWRuS/wYXoRvqFu+7BfMCWFbuIvDc/Pw4xzOkXyxS6T0PXx9P7yh4n5/SYqDIXbgLQWFNBTT+CKzFlyKhm0zN89wW490Wk+MLA3fOFxAEztcuiufMGneMnRUJrYCRgZKB2AeQSmbEFjcYvh+yVc9z9iU6VcV2vUXutYzAzvPTD8PUkRFj3U4ql3Q/3ig13hlYFzTqcj0Kjm6VY2pOA1+fLEm0A8jfzsarqPh2TLe5x1TOwflLIjN2GJiI89qV7jNe8aWimspuA0Vz7lhbh7DsvEkswlcFjZWlFpETTSbP8Ne1f8D/wFuiGvPkEU8hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;daily algorithm practice&quot;
-        title=&quot;daily algorithm practice&quot;
-        src=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png&quot;
-        srcset=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/c26ae/feb_22.png 158w,
-/static/59a50708709f66f23fa6abe4756ca4b1/6bdcf/feb_22.png 315w,
-/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png 630w,
-/static/59a50708709f66f23fa6abe4756ca4b1/40601/feb_22.png 945w,
-/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png 988w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Mar 2022 11:30:29 GMT</lastBuildDate><item><title><![CDATA[[boj] 1463. 1로 만들기 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 요약 [boj] 1463. 1로 만들기 (node.js) 풀이 입력으로 들어오는 정수 X에 대해 가능한 연산들은 아래와 같다. (1 <= X <= 10^6) 3으로 나누어 떨어지면 -> 이 수를…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1463/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1463/</guid><pubDate>Fri, 04 Mar 2022 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/march_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;문제 요약&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1463&quot;&gt;[boj] 1463. 1로 만들기 (node.js)&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;풀이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;입력으로 들어오는 정수 X에 대해 가능한 연산들은 아래와 같다. (1 &amp;#x3C;= X &amp;#x3C;= 10^6)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3으로 나누어 떨어지면 -&gt; 이 수를 3으로 나눈다&lt;/li&gt;
+&lt;li&gt;2로 나누어 떨어지면 -&gt; 이 수를 2로 나눈다&lt;/li&gt;
+&lt;li&gt;1을 뺀다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;연산을 활용해 주어진 정수 X를 1로 만들 수 있는 최소 횟수는?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;내 풀이&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;시간 제한이 0.15초인 동적 프로그래밍 문제다.&lt;/li&gt;
+&lt;li&gt;입력 정수 X의 범위가 주어졌으므로 (1 &amp;#x3C;= X &amp;#x3C;= 10^6) 미리 dp 배열을 채워둔 후 입력값에 대한 결과를 출력해주면 된다.&lt;/li&gt;
+&lt;li&gt;X를 1로 만드는 최단 경로를 파악하는 문제와 같으므로, 동적 프로그래밍으로 풀기 위해 거꾸로 생각하면 1부터 X를 만드는 문제다. 따라서 낮은 수부터 dp 배열을 채운다.&lt;/li&gt;
+&lt;li&gt;점화식은 해당 조건을 만족할 때마다 값을 이전 횟수 + 1로 갱신시키도록 하며,&lt;/li&gt;
+&lt;li&gt;조건을 만족한 이후에도 다음 조건에서 더 짧은 거리를 가질 수 있으므로 각각의 조건을 독립적으로 둔다. (if - if - )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; readline &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;readline&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; rl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; readline&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createInterface&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdin&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdout&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; dp &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+      dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      n&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; line &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; stdin&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;line&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; stdin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;line&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  stdin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;line&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 1759. 암호 만들기 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 요약 [boj] 1759. 암호 만들기 (node.js) C개의 서로 다른 문자들이 주어질 때, 주어진 규칙을 만족하는 L 자릿수 암호의 후보들을 출력하는 문제 풀이 Brute Force…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1759/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1759/</guid><pubDate>Thu, 03 Mar 2022 19:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/march_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;문제 요약&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;hhttps://www.acmicpc.net/problem/1759&quot;&gt;[boj] 1759. 암호 만들기 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -103,38 +134,7 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;h3&gt;주절주절&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;오랜만에 하는 브루트 포스! 문제 풀고 소스코드 확인하며 감을 잡으니까 잘 풀려서 너무 재미지다 ~~ !! 😆&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 1916. 최소비용 구하기 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 1916. 최소비용 구하기 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1916/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1916/</guid><pubDate>Thu, 03 Mar 2022 13:10:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABD0lEQVQoz5WSXUvCcBjF9xHNXuzFuoqgoC7qrhvHNuqiIMKLoPoi6X/TqWRuS/wYXoRvqFu+7BfMCWFbuIvDc/Pw4xzOkXyxS6T0PXx9P7yh4n5/SYqDIXbgLQWFNBTT+CKzFlyKhm0zN89wW490Wk+MLA3fOFxAEztcuiufMGneMnRUJrYCRgZKB2AeQSmbEFjcYvh+yVc9z9iU6VcV2vUXutYzAzvPTD8PUkRFj3U4ql3Q/3ig13hlYFzTqcj0Kjm6VY2pOA1+fLEm0A8jfzsarqPh2TLe5x1TOwflLIjN2GJiI89qV7jNe8aWimspuA0Vz7lhbh7DsvEkswlcFjZWlFpETTSbP8Ne1f8D/wFuiGvPkEU8hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;daily algorithm practice&quot;
-        title=&quot;daily algorithm practice&quot;
-        src=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png&quot;
-        srcset=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/c26ae/feb_22.png 158w,
-/static/59a50708709f66f23fa6abe4756ca4b1/6bdcf/feb_22.png 315w,
-/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png 630w,
-/static/59a50708709f66f23fa6abe4756ca4b1/40601/feb_22.png 945w,
-/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png 988w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 1916. 최소비용 구하기 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 요약 [boj] 1916. 최소비용 구하기 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1916/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-1916/</guid><pubDate>Thu, 03 Mar 2022 13:10:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/march_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;문제 요약&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1916&quot;&gt;[boj] 1916. 최소비용 구하기 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -480,38 +480,7 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 3055. 탈출 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 3055. 탈출 (node.js) 고슼도치가 비버 굴로 탈출 가능한 최단 시간을 출력하라! 탈출 불가시 “KAKTUS” 출력 풀이 BFS: 이동 가능한 4방향에 대해 탐색 if 조건으로 불필요한 탐색 최소화 (continue…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</guid><pubDate>Tue, 01 Mar 2022 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABD0lEQVQoz5WSXUvCcBjF9xHNXuzFuoqgoC7qrhvHNuqiIMKLoPoi6X/TqWRuS/wYXoRvqFu+7BfMCWFbuIvDc/Pw4xzOkXyxS6T0PXx9P7yh4n5/SYqDIXbgLQWFNBTT+CKzFlyKhm0zN89wW490Wk+MLA3fOFxAEztcuiufMGneMnRUJrYCRgZKB2AeQSmbEFjcYvh+yVc9z9iU6VcV2vUXutYzAzvPTD8PUkRFj3U4ql3Q/3ig13hlYFzTqcj0Kjm6VY2pOA1+fLEm0A8jfzsarqPh2TLe5x1TOwflLIjN2GJiI89qV7jNe8aWimspuA0Vz7lhbh7DsvEkswlcFjZWlFpETTSbP8Ne1f8D/wFuiGvPkEU8hQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;daily algorithm practice&quot;
-        title=&quot;daily algorithm practice&quot;
-        src=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png&quot;
-        srcset=&quot;/static/59a50708709f66f23fa6abe4756ca4b1/c26ae/feb_22.png 158w,
-/static/59a50708709f66f23fa6abe4756ca4b1/6bdcf/feb_22.png 315w,
-/static/59a50708709f66f23fa6abe4756ca4b1/f058b/feb_22.png 630w,
-/static/59a50708709f66f23fa6abe4756ca4b1/40601/feb_22.png 945w,
-/static/59a50708709f66f23fa6abe4756ca4b1/e4900/feb_22.png 988w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 3055. 탈출 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 요약 [boj] 3055. 탈출 (node.js) 고슼도치가 비버 굴로 탈출 가능한 최단 시간을 출력하라! 탈출 불가시 “KAKTUS” 출력 풀이 BFS: 이동 가능한 4방향에 대해 탐색 if…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-3055/</guid><pubDate>Tue, 01 Mar 2022 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/march_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;문제 요약&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/3055&quot;&gt;[boj] 3055. 탈출 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
