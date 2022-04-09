@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Apr 2022 15:10:42 GMT</lastBuildDate><item><title><![CDATA[반효경 [운영체제] 17. Deadlocks 2]]></title><description><![CDATA[Deadlock의 처리 방법, Deadlock Avoidance, Example of Banker’s Algorithm, p1 request(1, 0, 2), Deadlock Detection and Recovery, Deadlock Ignorance…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/17-Deadlocks_2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/17-Deadlocks_2/</guid><pubDate>Thu, 07 Apr 2022 22:20:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Apr 2022 20:26:14 GMT</lastBuildDate><item><title><![CDATA[반효경 [운영체제] 17. Deadlocks 2]]></title><description><![CDATA[Deadlock의 처리 방법, Deadlock Avoidance, Example of Banker’s Algorithm, p1 request(1, 0, 2), Deadlock Detection and Recovery, Deadlock Ignorance…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/17-Deadlocks_2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/17-Deadlocks_2/</guid><pubDate>Thu, 07 Apr 2022 22:20:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;Deadlock의 처리 방법, Deadlock Avoidance, Example of Banker’s Algorithm, p1 request(1, 0, 2), Deadlock Detection and Recovery, Deadlock Ignorance&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
@@ -10,7 +10,7 @@
 &lt;li&gt;Banker’s Algorithm은 모든 프로세스에 대한 경우의 수를 판단한다. 할당된 자원과, 최대로 요구할 수 있는 자원의 양, 그리고 현재 가용 자원의 양 이 세 가지를 두고, 가용 자원으로 해당 프로세스의 요청이 처리 가능한 경우에만 자원을 할당해 준다.&lt;/li&gt;
 &lt;li&gt;사전에 판단함으로써 절대 데드락이 생기지 않는 요청에 대해서만 받아들이는 보수적인 알고리즘이다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%201.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
+&lt;p&gt;![Untitled](%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92 %E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%201.png)&lt;/p&gt;
 &lt;h3&gt;Deadlock Avoidance&lt;/h3&gt;
 &lt;p&gt;Deadlock Avoidance는 한 마디로 항상 Safe 한 상태를 유지하는 것이다. 현재 남아있는 자원으로 프로세스를 끝낼 수 있는 경우에만 프로세스에 자원을 할당해 준다!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;safe sequence&lt;/strong&gt;&lt;/p&gt;
@@ -25,11 +25,11 @@
 &lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%204.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
 &lt;p&gt;자원 당 인스턴스가 하나인 경우 → 사이클이 있으면 데드락이다.&lt;/p&gt;
 &lt;p&gt;사이클을 찾기 위한 오버헤드는 O(n^2)가 소요된다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%206.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%205.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;그래프상으로 생각해보면, 화살표가 나간다고 생각하면 n*(n-1)이므로 n^2에 수렴한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%205.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%206.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;자원당 인스턴스가 여러 개인 경우&lt;/h3&gt;
 &lt;p&gt;주어진 상황에서 데드락 발생 여부를 판단하고자 한다면?&lt;/p&gt;
 &lt;p&gt;→ 낙관적인 접근으로 시작하기! (사용한 자원은 반납할 것이라고 가정)&lt;/p&gt;
@@ -50,7 +50,7 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AD%E1%84%80%E1%85%A7%E1%86%BC%20%5B%20ba8ea/Untitled%208.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
 &lt;h1&gt;Deadlock Ignorance&lt;/h1&gt;
-&lt;p&gt;데드락이 생기던 말던 가만히 놔두는 것으로, 문제가 발생하므로 사용자가 이 문제를 인식하게 됨. 따라서 운영체제의 직접적 개입 없이, 사용자가 문제를 인식하고 처리하는 방법임.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[boj] 7576. 토마토 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 7576. 토마토 (node.js) 풀이 분명 올바르게 코드를 짠 것 같은데 시간초과로 넘어가질 않아, Queue 를 클래스로 구현하니 시간 내에 맞았게 풀이할 수 있었다. 전형적인 bfs…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-7576/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-7576/</guid><pubDate>Wed, 06 Apr 2022 19:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;데드락이 생기던 말던 가만히 놔두는 방법으로, 문제가 발생한다면, 사용자는 언젠가 이 문제를 인식하게 되므로 운영체제의 직접적 개입 없이, 사용자가 문제를 인식하고 처리하도록 할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[boj] 7576. 토마토 (node.js)]]></title><description><![CDATA[문제 요약 [boj] 7576. 토마토 (node.js) 풀이 분명 올바르게 코드를 짠 것 같은데 시간초과로 넘어가질 않아, Queue 를 클래스로 구현하니 시간 내에 맞았게 풀이할 수 있었다. 전형적인 bfs…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-7576/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-7576/</guid><pubDate>Wed, 06 Apr 2022 19:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
