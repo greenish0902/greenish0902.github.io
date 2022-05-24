@@ -37,12 +37,13 @@
 <p><a href="https://www.acmicpc.net/problem/11052">[boj] 11052. 카드 구매하기 (node.js)</a></p>
 <h3>풀이</h3>
 <ul>
-<li>N개의 카드를 구매하려 한다. 배열에 순서대로 1장짜리 카도, 2장짜리 카드, …, k장짜리 카드의 판매 가격 배열이 주어질 때,</li>
+<li>N개의 카드를 구매하려 한다. 배열에 순서대로 1장짜리 카드, 2장짜리 카드, …, k장짜리 카드의 판매 가격 배열이 주어질 때,</li>
 <li>N개의 카드르 구매할 수 있는 가장 비싼 가격은?</li>
 </ul>
 <h4>내 풀이</h4>
 <ul>
-<li>동적 프로그래밍 문제로, N개의 카드를 구매할 수 있는 가장 비싼 금액을 dp[N]으로 설정한다.</li>
+<li>동적 프로그래밍 문제</li>
+<li>dp[N] = N개의 카드를 구매할 수 있는 가장 비싼 금액</li>
 <li>X = 1에서 시작해서 dp[X]를 구한다. <code class="language-text">for X = 1; X &lt;= N; X++</code>
 <ul>
 <li>for 문 내부에서 점화식을 통해 해당 장수에서의 최댓값을 계산한다.
@@ -54,10 +55,11 @@
 </ul>
 </li>
 <li>즉, for (let i = 0; i &#x3C;N; i++) 을 돌며</li>
-<li><code class="language-text">let max = Math.max(dp[index] + dp[1 - index], max)</code> 를 갱신한다.</li>
+<li><code class="language-text">let max = Math.max(dp[index] + dp[X - index], max)</code> 를 갱신한다.</li>
 </ul>
 </li>
 <li>계산이 완료되면 dp[X] 에 max 값을 대입한다.</li>
+<li></li>
 </ul>
 </li>
 </ul>
