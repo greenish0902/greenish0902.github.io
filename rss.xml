@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 26 May 2022 06:10:05 GMT</lastBuildDate><item><title><![CDATA[[boj] 11054. 가장 긴 바이토닉 부분 수열 (node.js)]]></title><description><![CDATA[문제 [boj] 11054. 가장 긴 바이토닉 부분 수열 (node.js) 풀이 특정 수를 기준으로 좌측, 우측 수들을 항상 증가하는 부분 수열이 되도록 고를 수 있다. 수열 S가 어떤 수 Sk를 기준으로 S1 < S2 < … Sk-1 < Sk…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11054/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11054/</guid><pubDate>Thu, 26 May 2022 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 May 2022 13:59:05 GMT</lastBuildDate><item><title><![CDATA[[boj] 11054. 가장 긴 바이토닉 부분 수열 (node.js)]]></title><description><![CDATA[문제 [boj] 11054. 가장 긴 바이토닉 부분 수열 (node.js) 풀이 특정 수를 기준으로 좌측, 우측 수들을 항상 증가하는 부분 수열이 되도록 고를 수 있다. 수열 S가 어떤 수 Sk를 기준으로 S1 < S2 < … Sk-1 < Sk…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11054/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11054/</guid><pubDate>Thu, 26 May 2022 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -7014,7 +7014,34 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 11057. 오르막 수]]></title><description><![CDATA[문제 요약 BOJ 11057 오르막 수 오르막 수는 수의 자리가 오름차순을 이루는 수를 말한다. 입력: 오르막 수의 길이 N이 주어질 때 출력: 오르막 수의 개수를 구하라 인접한 수가 같아도 오름차순으로 친다. 수는…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11057/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11057/</guid><pubDate>Tue, 08 Feb 2022 21:40:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[반효경 [운영체제] 2. Introduction to Operating Systems]]></title><description><![CDATA[운영체제란? 정의 협의의 운영체제는 “커널” 을 가리키며 커널: 부팅 이후로 메모리에 상주하는 부분 광의의 운영체제는 커널 + 유틸리티를 의미한다. 운영체제의 목적 주된 목적: 하드웨어, 자원의 효율적 관리 자원 CPU, 메모리, 입출력장치(I/O…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/02-Introduction/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/02-Introduction/</guid><pubDate>Tue, 08 Feb 2022 21:40:00 GMT</pubDate><content:encoded>&lt;h1&gt;운영체제란?&lt;/h1&gt;
+&lt;h2&gt;정의&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;협의의 운영체제는 “커널” 을 가리키며
+&lt;ul&gt;
+&lt;li&gt;커널: 부팅 이후로 메모리에 상주하는 부분&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;광의의 운영체제는 커널 + 유틸리티를 의미한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;운영체제의 목적&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;주된 목적: &lt;strong&gt;하드웨어, 자원의 효율적 관리&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;자원
+&lt;ul&gt;
+&lt;li&gt;CPU, 메모리, 입출력장치(I/O Device) 등을 가리킨다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;효율적 관리
+&lt;ul&gt;
+&lt;li&gt;사용자 및 OS를 보호하고 프로세스, 파일, 메시지 관리 등을 포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;컴퓨터 시스템에게 편리한 사용환경을 제공하여 마치 한 대가 아닌 듯한 환상을 제공하는 효과를 낳는다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 11057. 오르막 수]]></title><description><![CDATA[문제 요약 BOJ 11057 오르막 수 오르막 수는 수의 자리가 오름차순을 이루는 수를 말한다. 입력: 오르막 수의 길이 N이 주어질 때 출력: 오르막 수의 개수를 구하라 인접한 수가 같아도 오름차순으로 친다. 수는…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11057/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-11057/</guid><pubDate>Tue, 08 Feb 2022 21:40:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -7058,7 +7085,17 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;h3&gt;풀이&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;동적 프로그래밍: 초기값을 설정한 후 점화식을 설정한다.&lt;/li&gt;
-&lt;li&gt;주어진 길이마다 특정 숫자로 끝나는 오르막 수의 개수를 저장한다. 길이가 N인 경우 N-1번째 배열에 저장된 값(개수)와의 규칙을 활용해 점화식을 세울 수 있다.&lt;/li&gt;
+&lt;li&gt;주어진 길이마다 특정 숫자로 끝나는 오르막 수의 개수를 저장한다. 길이가 N인 경우 N-1번째 배열에 저장된 값(개수)와의 규칙을 활용해 점화식을 세울 수 있다.
+&lt;ul&gt;
+&lt;li&gt;dp[i][j] = 마지막 숫자가 j인 i자리 오르막 수의 개수&lt;/li&gt;
+&lt;li&gt;점화식: dp[i][j] = ∑dp[i-1][0~j]
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; k &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; k &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; j&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; k&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;k&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;내 풀이&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; readline &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;readline&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -7094,33 +7131,6 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;10,007로 나눈 나머지를 출력해야 하므로, 배열을 도는 연산이 완료될 때마다 &lt;code class=&quot;language-text&quot;&gt;%= 10007&lt;/code&gt;로 연산한 값을 할당한다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[반효경 [운영체제] 2. Introduction to Operating Systems]]></title><description><![CDATA[운영체제란? 정의 협의의 운영체제는 “커널” 을 가리키며 커널: 부팅 이후로 메모리에 상주하는 부분 광의의 운영체제는 커널 + 유틸리티를 의미한다. 운영체제의 목적 주된 목적: 하드웨어, 자원의 효율적 관리 자원 CPU, 메모리, 입출력장치(I/O…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/02-Introduction/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/02-Introduction/</guid><pubDate>Tue, 08 Feb 2022 21:40:00 GMT</pubDate><content:encoded>&lt;h1&gt;운영체제란?&lt;/h1&gt;
-&lt;h2&gt;정의&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;협의의 운영체제는 “커널” 을 가리키며
-&lt;ul&gt;
-&lt;li&gt;커널: 부팅 이후로 메모리에 상주하는 부분&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;광의의 운영체제는 커널 + 유틸리티를 의미한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;운영체제의 목적&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;주된 목적: &lt;strong&gt;하드웨어, 자원의 효율적 관리&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;자원
-&lt;ul&gt;
-&lt;li&gt;CPU, 메모리, 입출력장치(I/O Device) 등을 가리킨다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;효율적 관리
-&lt;ul&gt;
-&lt;li&gt;사용자 및 OS를 보호하고 프로세스, 파일, 메시지 관리 등을 포함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;컴퓨터 시스템에게 편리한 사용환경을 제공하여 마치 한 대가 아닌 듯한 환상을 제공하는 효과를 낳는다.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[반효경 [운영체제] 1. 강의소개]]></title><description><![CDATA[운영체제 (Operating System, OS…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/01-Introduction/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/01-Introduction/</guid><pubDate>Tue, 08 Feb 2022 20:40:00 GMT</pubDate><content:encoded>&lt;h1&gt;운영체제 (Operating System, OS)&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;운영체제는 컴퓨터 &lt;strong&gt;하드웨어 바로 위&lt;/strong&gt;에 설치되는 &lt;strong&gt;소프트웨어 계층&lt;/strong&gt;으로서 모든 컴퓨터 시스템의 &lt;strong&gt;필수&lt;/strong&gt;적인 부분이다.&lt;/li&gt;
