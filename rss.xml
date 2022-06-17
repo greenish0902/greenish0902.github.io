@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Jun 2022 15:31:15 GMT</lastBuildDate><item><title><![CDATA[[프로그래머스 2단계] 카펫 (javascript)]]></title><description><![CDATA[daily algorithm practice 문제 https://programmers.co.kr/learn/courses/30/lessons/4284…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/carpet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/carpet/</guid><pubDate>Wed, 15 Jun 2022 20:05:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Jun 2022 14:16:37 GMT</lastBuildDate><item><title><![CDATA[[프로그래머스 2단계] 카펫 (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/4284…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/carpet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/carpet/</guid><pubDate>Wed, 15 Jun 2022 20:05:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;문제&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42842&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/42842&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;풀이&lt;/h1&gt;
@@ -37,7 +68,38 @@
     &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;includes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 2단계] 소수 찾기 (javascript)]]></title><description><![CDATA[daily algorithm practice 문제 https://programmers.co.kr/learn/courses/30/lessons/4283…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/findPrime/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/findPrime/</guid><pubDate>Wed, 15 Jun 2022 19:51:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 2단계] 소수 찾기 (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/4283…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/findPrime/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/findPrime/</guid><pubDate>Wed, 15 Jun 2022 19:51:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;문제&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42839&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/42839&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;풀이&lt;/h1&gt;
@@ -78,7 +140,38 @@
       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[1475. 방 번호 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 [boj] 1475. 방 번호 (node.js) 유형: 구현 난이도: 실버 5 풀이 핵심 풀이 최근에 공부한 게 재미있는 리액트이다보니 Object destructing…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-1475/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-1475/</guid><pubDate>Thu, 09 Jun 2022 23:45:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[1475. 방 번호 (node.js)]]></title><description><![CDATA[문제 [boj] 1475. 방 번호 (node.js) 유형: 구현 난이도: 실버 5 풀이 핵심 풀이 최근에 공부한 게 재미있는 리액트이다보니 Object destructing 을 즐겨 사용하고 있다. 로직에서 핵심은 “6과…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-1475/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-1475/</guid><pubDate>Thu, 09 Jun 2022 23:45:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1475&quot;&gt;[boj] 1475. 방 번호 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -116,7 +209,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 문자열 내 마음대로 정렬하기 (javascript)]]></title><description><![CDATA[daily algorithm practice 문제 https://programmers.co.kr/learn/courses/30/lessons/12915 간단한 정렬 문제 풀이 첫 풀이 sort…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/stringSelfSort/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/stringSelfSort/</guid><pubDate>Tue, 07 Jun 2022 20:35:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 문자열 내 마음대로 정렬하기 (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/12915 간단한 정렬 문제 풀이 첫 풀이 sort 메서드를 사용할 때, 내부에서 오름차순 / 내림차순 정렬 여부를 정의하기 위해 1 또는 -…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/stringSelfSort/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/stringSelfSort/</guid><pubDate>Tue, 07 Jun 2022 20:35:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;문제&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/12915&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/12915&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -144,7 +268,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;h3&gt;수정한 풀이&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;strings&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; strings&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;localeCompare&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 시저 암호 (javascript)]]></title><description><![CDATA[daily algorithm practice ASCII Code (아스키코드) American Standard Code for Information Interchange 의 약자이다. 각각의 비트가 유일한 char를 대표하는 총 7비트 char 12…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/caesarCode/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/caesarCode/</guid><pubDate>Tue, 07 Jun 2022 19:55:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 시저 암호 (javascript)]]></title><description><![CDATA[ASCII Code (아스키코드) American Standard Code for Information Interchange 의 약자이다. 각각의 비트가 유일한 char를 대표하는 총 7비트 char 128개의 집합이다. 구성 A는 65, Z는 9…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/caesarCode/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/caesarCode/</guid><pubDate>Tue, 07 Jun 2022 19:55:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;ASCII Code (아스키코드)&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;American Standard Code for Information Interchange 의 약자이다.&lt;/li&gt;
@@ -191,7 +346,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
       &lt;span class=&quot;token string&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;curCode &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; move &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 키패드 누르기 (javascript)]]></title><description><![CDATA[daily algorithm practice 문제 https://programmers.co.kr/learn/courses/30/lessons/67256 202…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/keypad/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/keypad/</guid><pubDate>Mon, 06 Jun 2022 19:40:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 키패드 누르기 (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/67256 202…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/keypad/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/keypad/</guid><pubDate>Mon, 06 Jun 2022 19:40:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;문제&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/67256&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/67256&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -255,7 +441,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
   &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getDist&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;cur&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; end&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cur&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; end&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;cur&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; end&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[11660. 구간 합 구하기 5 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 [boj] 11660. 구간 합 구하기 5 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-11660/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-11660/</guid><pubDate>Mon, 06 Jun 2022 16:10:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[11660. 구간 합 구하기 5 (node.js)]]></title><description><![CDATA[문제 [boj] 11660. 구간 합 구하기 5 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-11660/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-11660/</guid><pubDate>Mon, 06 Jun 2022 16:10:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/11660&quot;&gt;[boj] 11660. 구간 합 구하기 5 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;풀이&lt;/h2&gt;
@@ -347,7 +564,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 신고 결과 받기 (javascript)]]></title><description><![CDATA[daily algorithm practice 문제 https://programmers.co.kr/learn/courses/30/lessons/92334 2022 KAKAO BLIND RECRUITMENT…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/getReportedResult/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/getReportedResult/</guid><pubDate>Mon, 06 Jun 2022 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[프로그래머스 1단계] 신고 결과 받기 (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/92334 2022 KAKAO BLIND RECRUITMENT 문제다. 해결 논리는 평이한데, 전체 테스트케이스 중…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/getReportedResult/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level01/getReportedResult/</guid><pubDate>Mon, 06 Jun 2022 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;문제&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/92334&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/92334&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -389,7 +637,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 16194. 카드 구매하기 2 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 [boj] 16194. 카드 구매하기 2 (node.js) 풀이 핵심 풀이 이 문제에서는 카드의 개수가 1개일 때,…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-16194/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-16194/</guid><pubDate>Sat, 04 Jun 2022 12:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 16194. 카드 구매하기 2 (node.js)]]></title><description><![CDATA[문제 [boj] 16194. 카드 구매하기 2 (node.js) 풀이 핵심 풀이 이 문제에서는 카드의 개수가 1개일 때,…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-16194/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-16194/</guid><pubDate>Sat, 04 Jun 2022 12:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/16194&quot;&gt;[boj] 16194. 카드 구매하기 2 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;풀이&lt;/h2&gt;
@@ -439,7 +718,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 10971. 외판원 순회 2 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 [boj] 10971. 외판원 순회 2 (node.js) 풀이 핵심 풀이 rec() 함수로 브루트포스를 구현했다. i -> j 도시로 이동 불가능한 경우는 모두 반환처리해주고, visited…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-10971/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-10971/</guid><pubDate>Thu, 02 Jun 2022 23:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 10971. 외판원 순회 2 (node.js)]]></title><description><![CDATA[문제 [boj] 10971. 외판원 순회 2 (node.js) 풀이 핵심 풀이 rec() 함수로 브루트포스를 구현했다. i -> j 도시로 이동 불가능한 경우는 모두 반환처리해주고, visited…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-10971/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-10971/</guid><pubDate>Thu, 02 Jun 2022 23:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/10971&quot;&gt;[boj] 10971. 외판원 순회 2 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;풀이&lt;/h2&gt;
@@ -515,7 +825,38 @@ rl&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;close&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 2133. 타일 채우기 (node.js)]]></title><description><![CDATA[daily algorithm practice 문제 [boj] 2133. 타일 채우기 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-2133/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-2133/</guid><pubDate>Wed, 01 Jun 2022 14:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;../../../src/images/dailyAlgorithmPractice/june_22.png&quot; alt=&quot;daily algorithm practice&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[boj] 2133. 타일 채우기 (node.js)]]></title><description><![CDATA[문제 [boj] 2133. 타일 채우기 (node.js) 벽의 가로 길이가 주어진다. 이때, 주어진 타일로 채울 수 있는 경우의 수를 구하는 문제 핵심 풀이 홀수인 경우 완성할 수 있는 경우가 존재하지 않으므로…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-2133/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-2133/</guid><pubDate>Wed, 01 Jun 2022 14:20:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2133&quot;&gt;[boj] 2133. 타일 채우기 (node.js)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
