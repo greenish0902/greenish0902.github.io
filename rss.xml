@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Jun 2022 07:02:55 GMT</lastBuildDate><item><title><![CDATA[[boj] 15686. 치킨 배달 (node.js)]]></title><description><![CDATA[문제 [boj] 15686. 치킨 배달 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-15686/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-15686/</guid><pubDate>Wed, 22 Jun 2022 16:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Archive of development]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Jun 2022 09:34:29 GMT</lastBuildDate><item><title><![CDATA[[프로그래머스 2단계] H-Index (javascript)]]></title><description><![CDATA[문제 https://programmers.co.kr/learn/courses/30/lessons/42747 H-Index 의 정의에 따라, H-Index를 구해서 반환하는 문제이다. H-Index는 h번 이상 인용된 논문이 h편 이상일 때, h…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/hIndex/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Programmers-js/Level02/hIndex/</guid><pubDate>Fri, 24 Jun 2022 17:51:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqUlEQVQoz7WSQQvCMAyF/f8wu4nSDXUXr97UucMOnsSsSWpX6DJ/jVjwXkXh8Q6Bl/DxMst7/Fqz34fngApM9E/CqscFYBNCJ1Mnk2bOwLzmkHa56LHm+xqptq4iLg2WxCVRQhiMInsQuXi/t/Y8+M77E1t9vSlDScya7M4NG0NbthWzjkuTmJdArchxDO04NkHah9TOZWCKNGZaIRURPn97alUq6u9P8gSoM9zyx9Q5zAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;daily algorithm practice&quot;
+        title=&quot;daily algorithm practice&quot;
+        src=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png&quot;
+        srcset=&quot;/static/d235722fb49e14a23dbc9fa21b8beace/c26ae/june_22.png 158w,
+/static/d235722fb49e14a23dbc9fa21b8beace/6bdcf/june_22.png 315w,
+/static/d235722fb49e14a23dbc9fa21b8beace/f058b/june_22.png 630w,
+/static/d235722fb49e14a23dbc9fa21b8beace/40601/june_22.png 945w,
+/static/d235722fb49e14a23dbc9fa21b8beace/302a4/june_22.png 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;문제&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42747&quot;&gt;https://programmers.co.kr/learn/courses/30/lessons/42747&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;H-Index 의 정의에 따라, H-Index를 구해서 반환하는 문제이다.&lt;/li&gt;
+&lt;li&gt;H-Index는 h번 이상 인용된 논문이 h편 이상일 때, h값의 최댓값을 말한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;풀이 1&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;배열을 정렬한 후 배열의 원소를 하나씩 순회하며 해당하는 값보다 크거나 같은 원소의 개수가 최대가 될 수 있는 h값을 찾도록 구현했다. 배열의 전체 길이를 인수로 이분탐색을 구현해서 h값을 임의로 주도록 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;풀이 1 - 코드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isAvailable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mid&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mid
+        &lt;span class=&quot;token constant&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token constant&quot;&gt;R&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; mid &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;isAvailable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;cnt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; cnt&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; cnt &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;풀이 2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;나는 오름차순 정렬 후, 조건을 만족하는 배열의 길이를 &lt;code class=&quot;language-text&quot;&gt;arr.length - cnt&lt;/code&gt;로 구해서 조건 만족 여부를 판별했다. 추후 다른 풀이들을 보니 나보다 100 배는 더 쉽게 풀었더라… 그래서 수정한 코드는 아래와 같다.&lt;/li&gt;
+&lt;li&gt;내림차순 정렬을 하면 인덱스가 바로 판별해야 하는 대상이 된다. 따라서 인덱스가 숫자보다 작아지기 전까지 하나씩 탐색한 결과를 출력하면 구할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;풀이 2 - 코드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; i
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;생각&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;풀면서 내가 바보가 된 것 같았다. T-T 인자로 엉뚱한 값을 전달하고, 이분탐색에 while 문도 빼먹는 실수도 하고, 그냥 잘못 짜기도 하고… 그래도 왠지 할 수 있을 것 같은 오기가 생겨서 붙잡고 계속 풀다 보니 해결해서 참 기뻤다.&lt;/li&gt;
+&lt;li&gt;다른 풀이법들에 참 놀랐다. 배울 점이 참 많다! 좀 더 생각하고 차근차근 접근하기!! 풀어낼 수 있다!&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[boj] 15686. 치킨 배달 (node.js)]]></title><description><![CDATA[문제 [boj] 15686. 치킨 배달 (node.js…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-15686/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/BOJ-node-js/BOJ-15686/</guid><pubDate>Wed, 22 Jun 2022 16:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
