@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-tsx",
+    "path": "/category/til/",
+    "result": {"data":{"allMarkdownRemark":{"group":[{"fieldValue":"TIL","totalCount":1}],"totalCount":1,"edges":[{"node":{"id":"f9eec116-fac2-5b98-a30c-dfcce1d36036","frontmatter":{"title":"고무 오리 디버깅","category":"TIL","date":"2022-06-25","desc":"코딩테스트, 그리고 내 목표","thumbnail":{"childImageSharp":{"id":"c46aba20-45ef-5e44-9a04-5a97c6f7f1ae"},"base":"rubber-duck.jpeg"},"alt":"rubber duck"},"fields":{"slug":"/blog/TIL/220625/"}}}]}},"pageContext":{"category":"TIL"}},
+    "staticQueryHashes": ["1840460387","48878111"]}
