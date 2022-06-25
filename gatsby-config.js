@@ -1,108 +1,158 @@
-module.exports = {
-  siteMetadata: {
-    title: `🧞‍♂️ Welcome to DEV.SH !`,
-    author: {
-      name: `Shiloh`,
-      summary: `who lives and in South Korea learning Front-end Engineering.`,
+const meta = require("./gatsby-meta-config")
+
+const siteMetadata = {
+  title: meta.title,
+  description: meta.description,
+  author: meta.author,
+  siteUrl: meta.siteUrl,
+  lang: meta.lang,
+  utterances: {
+    repo: meta.utterances,
+  },
+  postTitle: "All",
+  menuLinks: [
+    {
+      link: "/",
+      name: "Home",
     },
-    description: `Archive of development`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      github: `greenish0902`,
+    {
+      link: "/about/",
+      name: "About",
+    },
+    {
+      link: meta.links.github,
+      name: "Github",
+    },
+  ],
+}
+
+const corePlugins = [
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "src",
+      path: `${__dirname}/src`,
     },
   },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/BOJ-node-js`,
-        name: `Algorithm`,
-      },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "images",
+      path: `${__dirname}/src/images`,
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/Operating-System`,
-        name: `blog`,
+  },
+]
+
+const devPlugins = [
+  {
+    resolve: "gatsby-plugin-alias-imports",
+    options: {
+      alias: {
+        Src: "src",
+        Components: "src/components",
+        Constants: "src/constants",
+        Hooks: "src/hooks",
+        Images: "src/images",
+        Layouts: "src/layouts",
+        Pages: "src/pages",
+        Posts: "src/posts",
+        Stores: "src/stores",
+        Styles: "src/styles",
+        Templates: "src/templates",
+        Types: "src/types",
+        Utils: "src/utils",
       },
+      extensions: ["js", "ts", "tsx"],
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+  },
+  {
+    resolve: "gatsby-plugin-typography",
+    options: {
+      pathToConfigModule: "src/styles/typography",
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
+  },
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-typescript",
+  "gatsby-plugin-styled-components",
+]
+
+const imagePlugins = [
+  "gatsby-plugin-image",
+  "gatsby-plugin-sharp",
+  "gatsby-transformer-sharp",
+]
+
+const markdownPlugins = [
+  {
+    resolve: "gatsby-transformer-remark",
+    options: {
+      plugins: [
+        "gatsby-remark-copy-linked-files",
+        {
+          resolve: "gatsby-remark-vscode",
+          options: {
+            theme: {
+              default: "Github Light Theme",
+              parentSelector: {
+                "body[data-theme=dark]": "Dark Github",
+              },
             },
+            extensions: ["vscode-theme-github-light", "dark-theme-github"],
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+        },
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            linkImagesToOriginal: false,
           },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
+        },
+      ],
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
+  },
+]
+
+const searchPlugins = [
+  "gatsby-plugin-sitemap",
+  "gatsby-plugin-robots-txt",
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
             }
           }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
+        }
+      `,
+      feeds: [
+        {
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+            return allMarkdownRemark.edges.map(edge => {
+              return Object.assign({}, edge.node.frontmatter, {
+                description: edge.node.excerpt,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                custom_elements: [{ "content:encoded": edge.node.html }],
               })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
+            })
+          },
+          query: `
+            {
+              allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/(posts/blog)/" } }
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
                     excerpt
                     html
-                    fields {
-                      slug
-                    }
+                    fields { slug }
                     frontmatter {
                       title
                       date
@@ -110,30 +160,45 @@ module.exports = {
                   }
                 }
               }
-            `,
-            output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
-          },
-        ],
+            }
+          `,
+          output: "/rss.xml",
+          title: `${meta.title}'s RSS Feed`,
+        },
+      ],
+    },
+  },
+]
+
+const pwaPlugins = [
+  {
+    resolve: "gatsby-plugin-manifest",
+    options: {
+      name: meta.title,
+      short_name: meta.title,
+      description: meta.description,
+      lang: meta.lang,
+      start_url: "/",
+      background_color: "#ffffff",
+      theme_color: "#ffffff",
+      display: "standalone",
+      icon: meta.favicon,
+      icon_options: {
+        purpose: "any maskable",
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+  },
+  "gatsby-plugin-offline",
+]
+
+module.exports = {
+  siteMetadata,
+  plugins: [
+    ...corePlugins,
+    ...devPlugins,
+    ...imagePlugins,
+    ...markdownPlugins,
+    ...searchPlugins,
+    ...pwaPlugins,
   ],
 }
