@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 25 Jun 2022 22:56:32 GMT</lastBuildDate><item><title><![CDATA[고무 오리 디버깅]]></title><description><![CDATA[6/25…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220625/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220625/</guid><pubDate>Sat, 25 Jun 2022 02:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;6/25&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jun 2022 13:47:40 GMT</lastBuildDate><item><title><![CDATA[nomad coder]]></title><description><![CDATA[1. 아티클 세상을 누비며 개발하는 BBC 노마드 코더 1-1. 노마드 코더 202…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</guid><pubDate>Sun, 26 Jun 2022 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 아티클&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wanted.co.kr/events/22_05_s06_b01?sort=deadline&amp;#x26;label=article&amp;#x26;payable=all&quot;&gt;세상을 누비며 개발하는 BBC 노마드 코더&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1-1. 노마드 코더&lt;/p&gt;
+&lt;p&gt;2022년을 기점으로 쭉 돌이켜 볼 때, 요즘은 살기 썩 좋은 시대는 아니다. 과거는 향수로 기억되는 법이라 하건만, 그렇다 해도 개인의 삶의 질만을 놓고 비교할 때 최상급의 시대는 아니라고 생각한다. 사람은 혼자 살면 우울하고, 같이 살면 스트레스받기 나름이지만 최소한 나는 요즘이 최선의 시점은 아니라고 생각한다.&lt;/p&gt;
+&lt;p&gt;그 와중에도 장점을 몇 개 꼽아보자면 단연코 빛나는 건 요즘 머릿속에 가득찬 ‘해외취업&apos; 에 대한 생각이다. 노마드코더 라이프!&lt;/p&gt;
+&lt;p&gt;주체적인 삶을 살지 못한 과거를 후회하며 지금 이 순간의 선택이 날 어떻게 바꿀지 고민해본다. 고민을 시작하면 아무것도 할 수 없다. 오직 실천만이 답이다. 해 봐야 아는 것이다. 관심을 두고 고민해보자.&lt;/p&gt;
+&lt;p&gt;1-2. 적성과 직업&lt;/p&gt;
+&lt;p&gt;헤더님의 적성과 직업에 대한 가치관이 인상깊었다. 적힌 어투 자체가 본인의 가치관을 확고히 갖고 계신 분이라는 게 더 느껴졌기에 강력하게 끌리기도 했다.&lt;/p&gt;
+&lt;p&gt;적성이 있어야만 직업을 가질 수 있는 것인가, 반드시 내가 잘 하는 일을 해야 하나 … 청소년기부터 많이들 하는 고민이다. 어쩌면 이 ‘적성&apos;을 판단하는 건 자신의 몫인 만큼, 성격과 환경에 의해 본인의 머릿속에 스스로 암시하는 게 전부가 아닐까 생각한다. 자기확신을 가지고 나아가자.&lt;/p&gt;
+&lt;h2&gt;2. puppy-walk&lt;/h2&gt;
+&lt;p&gt;정규식 처리를 구현을 시작했다. 이번주는 기능 구현 목표치를 정해두고 달성하는 방식으로 가보자! 월요일 화이팅.&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[고무 오리 디버깅]]></title><description><![CDATA[6/25…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220625/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220625/</guid><pubDate>Sat, 25 Jun 2022 02:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;6/25&lt;/h1&gt;
 &lt;h3&gt;1. 고무 오리&lt;/h3&gt;
 &lt;p&gt;이번 주는 내가 코딩테스트에 얼마나 나약한지를 피부로 느끼며 좌절한 한 주였다. 한 큐에 풀기는커녕 풀이를 찾아보는 일이 다반사였다.&lt;/p&gt;
 &lt;p&gt;그렇지만 계속 도전했고, 드디어 전환점을 맞았다! 정체구간이라고 느꼈던 원인을 파악한 덕분이다.&lt;/p&gt;
@@ -42,7 +142,6 @@
 고무 오리 디버깅으로 정체구간을 뚫고 나가자!&lt;/p&gt;
 &lt;h3&gt;2. C 명령행인자&lt;/h3&gt;
 &lt;p&gt;C 언어는 모든 언어의 조상격인 만큼 굉장히 재미있다.&lt;/p&gt;
-&lt;p&gt;C의 명령행인자는&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.boostcourse.org/cs112/lecture/119018/?isDesc=false&quot;&gt;C 명령행인자&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;

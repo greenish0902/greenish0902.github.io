@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/",
-    "result": {"data":{"allMarkdownRemark":{"group":[{"fieldValue":"TIL","totalCount":1}],"totalCount":1,"edges":[{"node":{"id":"f9eec116-fac2-5b98-a30c-dfcce1d36036","frontmatter":{"title":"고무 오리 디버깅","category":"TIL","date":"2022-06-25","desc":"코딩테스트, 그리고 내 목표","thumbnail":{"childImageSharp":{"id":"c46aba20-45ef-5e44-9a04-5a97c6f7f1ae"},"base":"rubber-duck.jpeg"},"alt":"rubber duck"},"fields":{"slug":"/blog/TIL/220625/"}}}]}},"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"group":[{"fieldValue":"TIL","totalCount":2}],"totalCount":2,"edges":[{"node":{"id":"d7dd2bde-6956-5757-aa09-5cf0941e4605","frontmatter":{"title":"nomad coder","category":"TIL","date":"2022-06-26","desc":"어떻게 살 것인가","thumbnail":{"childImageSharp":{"id":"736e64b0-253d-5c89-9a15-de218543cc4a"},"base":"default.png"},"alt":""},"fields":{"slug":"/blog/TIL/220626/"}}},{"node":{"id":"f9eec116-fac2-5b98-a30c-dfcce1d36036","frontmatter":{"title":"고무 오리 디버깅","category":"TIL","date":"2022-06-25","desc":"코딩테스트, 그리고 내 목표","thumbnail":{"childImageSharp":{"id":"c46aba20-45ef-5e44-9a04-5a97c6f7f1ae"},"base":"rubber-duck.jpeg"},"alt":"rubber duck"},"fields":{"slug":"/blog/TIL/220625/"}}}]}},"pageContext":{}},
     "staticQueryHashes": ["1840460387","48878111"]}
