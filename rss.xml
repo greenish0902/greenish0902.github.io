@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jun 2022 13:47:40 GMT</lastBuildDate><item><title><![CDATA[nomad coder]]></title><description><![CDATA[1. 아티클 세상을 누비며 개발하는 BBC 노마드 코더 1-1. 노마드 코더 202…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</guid><pubDate>Sun, 26 Jun 2022 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 아티클&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Jun 2022 14:28:20 GMT</lastBuildDate><item><title><![CDATA[이것저것 화요일]]></title><description><![CDATA[오늘은 화요일! 월요일에 코딩테스트 전후로 번아웃 모드였던 바람에 할 일이 두 배였다. 그래도 꾸역꾸역 나아간 오늘은 이것저것 한 건 많지만 이뤄낸 건 적은 하루. 1번. TypeScript…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220627/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220627/</guid><pubDate>Tue, 28 Jun 2022 02:20:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘은 화요일! 월요일에 코딩테스트 전후로 번아웃 모드였던 바람에 할 일이 두 배였다. 그래도 꾸역꾸역 나아간 오늘은 이것저것 한 건 많지만 이뤄낸 건 적은 하루.&lt;/p&gt;
+&lt;img src=&quot;https://media2.giphy.com/media/fUwekpN5vvBEn3mgcv/giphy.gif?cid=ecf05e47ks2lblq78koe38ll19v1h8dhli5bcmp1pfhj064o&amp;amp;rid=giphy.gif&amp;amp;ct=g&quot; alt=&quot;burnout&quot;&gt;
+&lt;p&gt;&lt;strong&gt;1번.&lt;/strong&gt; &lt;a href=&quot;https://www.notion.so/1-eba16388435a4fb7a23e88131c526b7a&quot;&gt;TypeScript 챌린지가 시작했다.&lt;/a&gt; 기본 문법부터 입문이라도 한 바퀴 이해하는 것이 목표다. 꾸준하게 습득하자! &lt;code&gt;let done : boolean = false;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2번.&lt;/strong&gt; MySQL WorkBench 사용법을 더 자세히 습득했다. insert into 처럼 반복적으로 사용되는 구문의 양식들은 마우스 우클릭을 통해 손쉽게 클립보드에 복사할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3번.&lt;/strong&gt; 낮에 상담을 다녀왔다. 이력서를 상세히 기재하고 첨삭을 받자.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4번.&lt;/strong&gt; 코딩테스트 경험을 쌓는 겸 입사지원서를 하나 제출했다. 7월 2일에 코딩테스트가 두 개라 하나를 포기하게 됐으면 좋겠다. (1차 붙고 싶다!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5번.&lt;/strong&gt; 미뤄뒀던 서평을 적었다. 생각을 정리했고, 실천해야 할 일과 생각의 변화를 기록해봤다. 저자가 나와는 조금 다른 생각을 가진 사람이었지만, 저자의 생각을 따라 긴 호흡으로 생각해볼 기회를 준다는 점에서 좋은 양식이었다. 여름에 시간을 내서 기차여행을 다녀와야겠다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;내일은 코딩테스트 준비하자.&lt;/p&gt;
+&lt;p&gt;할 일이 많다! 시간을 쪼개 쓰되, 할 땐 큼지막하게 몰입하자.&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[nomad coder]]></title><description><![CDATA[1. 아티클 세상을 누비며 개발하는 BBC 노마드 코더 1-1. 노마드 코더 202…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220626/</guid><pubDate>Sun, 26 Jun 2022 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. 아티클&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.wanted.co.kr/events/22_05_s06_b01?sort=deadline&amp;#x26;label=article&amp;#x26;payable=all&quot;&gt;세상을 누비며 개발하는 BBC 노마드 코더&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1-1. 노마드 코더&lt;/p&gt;
 &lt;p&gt;2022년을 기점으로 쭉 돌이켜 볼 때, 요즘은 살기 썩 좋은 시대는 아니다. 과거는 향수로 기억되는 법이라 하건만, 그렇다 해도 개인의 삶의 질만을 놓고 비교할 때 최상급의 시대는 아니라고 생각한다. 사람은 혼자 살면 우울하고, 같이 살면 스트레스받기 나름이지만 최소한 나는 요즘이 최선의 시점은 아니라고 생각한다.&lt;/p&gt;
@@ -301,4 +400,310 @@
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[프로미스]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/JavaScript/02_프로미스/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/JavaScript/02_프로미스/</guid><pubDate>Thu, 16 Jun 2022 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;프로미스 등장의 배경: 콜백 헬, 에러 처리&lt;/h1&gt;
+&lt;p&gt;프로미스가 등장하게 된 배경에는 비동기 함수의 단점인 &lt;strong&gt;콜백 헬, 에러 처리의 어려움 등&lt;/strong&gt;이 있습니다.&lt;/p&gt;
+&lt;p&gt;일반적인 비동기 함수에서 처리 결과를 활용해야 할 때, 비동기 함수는 외부에 그 결과를 반환할 수 없고, 상위 스코프의 변수에 할당할 수도 없습니다. 또, 비동기 함수는 에러 처리가 어렵습니다. 에러는 호출자 방향(콜 스택의 아랫쪽)으로 전파되는데, 비동기 함수의 컨텍스트는 호출자와 다르기 때문에 try catch 문으로 에러를 캐치할 수 없습니다.&lt;/p&gt;
+&lt;p&gt;따라서 항상 사후 처리를 하기 위한 콜백 함수를 내부에 전달해야 합니다. 그렇기 때문에 여러 번의 처리가 반복 수행되어야 하는 경우, 콜백 함수 여러 개가 중첩되어 복잡도가 높아지는 콜백 헬이 발생하게 됩니다.&lt;/p&gt;
+&lt;p&gt;이렇듯 비동기 함수는 콜백 헬로 인한 복잡한 구조, 낮은 가독성, 에러 처리의 어려움이라는 단점이 있습니다. 이를 개선하기 위해 ES6에서는 프로미스가 도입됩니다.&lt;/p&gt;
+&lt;h1&gt;ES6, 프로미스&lt;/h1&gt;
+&lt;p&gt;ES6에서는 프로미스가 도입됩니다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;jsx&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-1&quot;&gt;promise&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-10 grvsc-t4tStz-1&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;	&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-6 grvsc-t4tStz-2&quot;&gt;//  비동기처리 수행 및 결과에 따른 함수 호출...&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;}));&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;프로미스 객체는 콜백 함수를 인자로 받는 생성자 함수를 통해 만들 수 있습니다. 인자로 전달받은 콜백 함수 내부에서 비동기 처리를 수행하며 그 결과에 따라 resolve, reject 함수가 실행됩니다.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;프로미스의 상태&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;프로미스의 상태는 생성 직후, 즉 비동기 처리가 아직 완료되지 않은 경우 pending입니다. 처리가 완료된 상태는 settled 라고 통칭하며, settled 상태는 처리 성공 유무에 따라 fulfilled, rejected 상태로 다시 분류할 수 있습니다. 처리가 성공한 경우는 resolve 함수를 호출해 프로미스를 fulfilled 상태로 변경합니다. 비동기 처리가 실패한 경우는 reject 함수를 호출, 프로미스를 rejected 상태로 변경합니다.&lt;/p&gt;
+&lt;h2&gt;프로미스 체이닝&lt;/h2&gt;
+&lt;p&gt;일반적으로 프로미스를 반환하는 함수를 통해 비동기 통신을 구현합니다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;jsx&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-10 grvsc-t4tStz-5&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-10 grvsc-t4tStz-1&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;, &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; {&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; (temp &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-3&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;) &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-10 grvsc-t4tStz-1&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;Too Hot!&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  })&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;이 메서드가 프로미스를 반환하도록 구현하였으므로 프로미스의 후속 처리 메서드인 then, catch, finally 등을 사용할 수 있습니다. 이때, then, catch, finally 메서드는 모두 또 다시 프로미스 객체를 반환하므로 연속적 호출, 즉 &lt;strong&gt;프로미스 체이닝&lt;/strong&gt;이 가능합니다.&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;jsx&quot; data-index=&quot;2&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-1&quot;&gt;coldwater&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-9&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-3&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  .&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(() &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-3&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-1&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;Cooooooooool!&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  .&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-11 grvsc-t4tStz-6&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-3&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-1&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(error))&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  .&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-7 grvsc-t4tStz-5&quot;&gt;finally&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;(() &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-5 grvsc-t4tStz-9&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;still thirsty!&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then 메서드는 인수로 두 개의 콜백 함수를 받으며, 각각 프로미스의 상태가 fulfilled, reject 일 때 실행됩니다. 프로미스 체이닝을 통해 연속적인 호출을 하는 경우, then 메서드의 두 번째 인자에서 reject 처리를 하면 콜백 함수에서의 에러를 캐치하지 못하는 경우가 발생할 수 있습니다. 이처럼 프로미스 체이닝이 반복되는 경우 catch 메서드로 체이닝하면 콜백 함수의 에러와 프로미스의 에러 두 경우 모두를 캐치할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;then, catch, finally 메서드는 항상 프로미스 객체를 반환하므로 만약 콜백 함수가 프로미스 객체를 반환하지 않아도, 암묵적으로 프로미스를 생성하여 반환합니다.&lt;/p&gt;
+&lt;h1&gt;Promise 객체의 메서드&lt;/h1&gt;
+&lt;h3&gt;Promise.resolve, Promise.reject&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;프로미스 객체는 값을 래핑해서 프로미스를 생성해야 하는 경우 resolve, reject 정적 메서드를 활용합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Promise.all&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인수: 프로미스를 요소로 갖는 이터러블로, 인수로 전달받은 이터러블의 요소가 프로미스가 아닌 경우에는 Promise.resolve 메서드를 통해 프로미스로 래핑합니다.&lt;/li&gt;
+&lt;li&gt;반환: 모든 요소 프로미스들이 fulfilled 이면 처리 결과를 배열에 저장해서 새로운 프로미스로 반환합니다. 프로미스가 하나라도 rejected 상태가 되면 즉시 종료합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Promise.race&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인수: 프로미스를 요소로 갖는 이터러블입니다.&lt;/li&gt;
+&lt;li&gt;반환: 가장 먼저 fulfilled 상태가 된 프로미스의 처리 결과를 resolve 하는 새로운 프로미스를 반환합니다. 하나라도 rejected 되면 즉시 reject 하는 프로미스를 반환합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Promise.allSettled&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인수: 프로미스를 요소로 갖는 이터러블입니다.&lt;/li&gt;
+&lt;li&gt;반환: 모두 settled 상태가 되면 배열로 반환합니다. 배열의 요소는 프로미스 객체로, 프로미스의 상태가 fulfilled 라면 status, value 프로퍼티를 갖고, rejected 된 경우 status, reason 프로퍼티를 갖습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;기타&lt;/h1&gt;
+&lt;h2&gt;직렬화, 역직렬화&lt;/h2&gt;
+&lt;p&gt;직렬화(serialize)는 &lt;strong&gt;객체&lt;/strong&gt;를 JSON 형식의 &lt;strong&gt;문자열&lt;/strong&gt; 형태로 변환하는 것이고 (&lt;code&gt;JSON.stringify(obj)&lt;/code&gt;) 역직렬화(deserialize)는 JSON 형식의 &lt;strong&gt;문자열을&lt;/strong&gt; 자바스크립트 &lt;strong&gt;객체&lt;/strong&gt;로(&lt;code&gt;JSON.parse(obj)&lt;/code&gt;) 만드는 것입니다.&lt;/p&gt;
+&lt;h2&gt;마이크로태스크 큐&lt;/h2&gt;
+&lt;p&gt;비동기 함수는 태스크 큐로 푸시되어, 콜 스택이 비었을 때 호출되게 됩니다. 마이크로태스크 큐는 태스크 큐와 유사하지만 보다 우선순위가 높은 큐입니다.&lt;/p&gt;
+&lt;p&gt;프로미스 후속 처리 메서드의 콜백 함수는 마이크로태스크 큐에 푸시됩니다. 콜 스택이 비면 마이크로태스크 큐에 있는 태스크가 콜 스택에 푸시되고, 마이크로태스크 큐가 비면 태스크 큐의 태스크가 콜 스택에 푸시됩니다.&lt;/p&gt;
+&lt;h2&gt;fetch&lt;/h2&gt;
+&lt;p&gt;fetch 함수는 프로미스를 반환합니다. 정확히는 HTTP 응답 객체(Reponse)를 래핑한 프로미스 객체를 반환합니다. fetch 함수는 resposonse.json() 메서드를 통해 역직렬화 단계를 후속 처리해줘야 하며, 에러가 발생해도 에러를 reject 하지 않고 response.ok 를 false로 설정한 Response 객체를 resolve 하므로, reject 처리를 위해 직접 response.ok 상태를 확인할 필요가 있습니다.&lt;/p&gt;
+&lt;p&gt;axios를 활용하면 catch 를 통해 모든 에러를 캐치할 수 있습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.yes24.com/Product/Goods/92742567&quot;&gt;모던 자바스크립트 Deep Dive&lt;/a&gt; 를 읽고 이해한 내용을 바탕으로 작성한 글입니다.&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .github-light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .github-light-theme .grvsc-tiszgT-5 { color: #D73A49; }
+  .github-light-theme .grvsc-tiszgT-1 { color: #000000; }
+  .github-light-theme .grvsc-tiszgT-7 { color: #005CC5; }
+  .github-light-theme .grvsc-tiszgT-10 { color: #6F42C1; }
+  .github-light-theme .grvsc-tiszgT-11 { color: #E36209; }
+  .github-light-theme .grvsc-tiszgT-6 { color: #6A737D; }
+  .github-light-theme .grvsc-tiszgT-8 { color: #032F62; }
+  .github-light-theme .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
+  }
+  body[data-theme=dark] .grvsc-ps-t4tStz { color: #ffffff; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-9 { color: #EB7E81; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-1 { color: #FFFFFF; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-6 { color: #F39961; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-2 { color: #A19B8F; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-5 { color: #BB97E7; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-3 { color: #66B5F6; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-10 { color: #9DCDF5; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[싱글 스레드와 비동기 프로그래밍]]></title><description><![CDATA[싱글 스레드란? 운영체제, 프로세스, 스레드 운영체제는 프로세스에 주소, 공간, 메모리 등을 할당합니다. 프로세스는 실행 중인 프로그램이자, CPU 스케줄링의 대상인 작업(task…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/JavaScript/01_싱글스레드와_비동기_프로그래밍/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/JavaScript/01_싱글스레드와_비동기_프로그래밍/</guid><pubDate>Mon, 13 Jun 2022 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;싱글 스레드란?&lt;/h1&gt;
+&lt;h2&gt;운영체제, 프로세스, 스레드&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;운영체제는 프로세스에 주소, 공간, 메모리 등을 할당합니다.&lt;/li&gt;
+&lt;li&gt;프로세스는 실행 중인 프로그램이자, CPU 스케줄링의 대상인 작업(task)과 동일한 의미입니다.
+프로세스는 할당받은 자원을 효율적으로 이용하기 위해서 작업들을 여러 개의 CPU 수행 단위로 쪼개 실행합니다.
+&lt;blockquote&gt;
+&lt;p&gt;Process is a program in execution&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;이때 하나의 프로세스로부터 쪼개진 가장 작은 CPU 수행의 단위가 바로 스레드입니다. 즉, 스레드는 &lt;strong&gt;프로세스의 실행 가능한 가장 작은 단위&lt;/strong&gt;입니다.
+&lt;blockquote&gt;
+&lt;p&gt;A thread (or lightweight process) is a basic unit of CPU utilization&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;싱글 스레드&lt;/h2&gt;
+&lt;p&gt;자바스크립트 엔진은 하나의 실행 컨텍스트 스택 (콜 스택)을 갖습니다. 반드시 콜 스택이 비어야지만 다음 작업을 푸시할 있어 현재 실행 중인 실행 컨텍스트 이외에 다른 작업이 수행될 수 없습니다. 이 말을 운영체제의 용어로 바꾸면, 아래와 같이 표현할 수 있습니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;자바스크립트 엔진은 &apos;싱글 스레드&apos; 방식으로 동작합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&apos;싱글 스레드 방식으로 동작&apos;은 &lt;strong&gt;한 번에 하나의 작업이 수행 가능하다&lt;/strong&gt;는 말과 같습니다. 따라서 하나의 작업이 끝나기 전까지 다음 작업이 수행될 수 없으므로 (동기식), 시간이 오래 걸리는 작업을 수행하는 경우 작업 중단(blocking)이 발생할 수 있습니다. 이때 비동기 처리 방식을 이용하면 작업 중단을 피할 수 있습니다.&lt;/p&gt;
+&lt;h1&gt;비동기 프로그래밍&lt;/h1&gt;
+&lt;h2&gt;비동기&lt;/h2&gt;
+&lt;p&gt;비동기는 2개 이상의 행위가 동시에 일어나거나 존재하지 않는 것을 의미합니다. 네트워킹 분야와 소프트웨어 분야에서 사용되는 용어입니다.&lt;/p&gt;
+&lt;p&gt;네트워킹에서의 예시는 이메일이 있습니다. 이메일은 연락을 주고받을 때 즉시 응답이 아닌 원할 때에 응답을 주고 받는 방식입니다. 즉시 소통을 필요로 하지는 않지만, 송신자가 메일을 보낸 이후에 수신자가 특정 시점(확인을 원하는 시점)에 이를 확인하고 응답할 수 있다는 점에서 비동기 방식입니다.&lt;/p&gt;
+&lt;p&gt;소프트웨어 분야에서 비동기 처리 방식은 &lt;strong&gt;실행 중인 작업이 완료되지 않아도 다음 작업을 수행하는 방식&lt;/strong&gt;을 일컫는 말입니다. 이는 다양한 방법들로 구현될 수 있습니다.&lt;/p&gt;
+&lt;h2&gt;자바스크립트에서의 비동기 프로그래밍&lt;/h2&gt;
+&lt;p&gt;자바스크립트에서 비동기 프로그래밍은 콜백 패턴으로 작성합니다. 비동기 함수가 콜백 함수를 내장하며, 이 콜백 함수는 비동기 함수가 실행될 때 태스크 큐에 저장됩니다. 이벤트 루프가 돌다가 콜 스택이 비면 태스크 큐에 저장되었던 콜백함수가 콜 스택에 푸시되어 호출됩니다.&lt;/p&gt;
+&lt;p&gt;비동기 프로그래밍은 앞서 동기식 프로그래밍의 단점인 블로킹을 극복할 수 있습니다. (Non-Blocking) 이 방식의 단점은 예외 처리가 어렵고, 코드가 순차적으로 실행되지 않아 코드의 흐름 파악이 다소 까다롭다는 점이 있습니다.&lt;/p&gt;
+&lt;p&gt;예시로는 타이머 함수(SetTimeout, setInterval), HTTP 요청, 이벤트 핸들러가 있습니다.&lt;/p&gt;
+&lt;h1&gt;유의할 점&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;자바스크립트 엔진은 싱글스레드 방식으로 동작하지만, 브라우저는 멀티 스레드로 동작합니다. 이 둘은 동일하지 않습니다.&lt;/li&gt;
+&lt;li&gt;자바스크립트에서 비동기 프로그래밍 구현의 핵심 요소인 이벤트 루프는 브라우저에 내장된 기능입니다. 브라우저가 콜백 함수를 큐에 푸시하고, 콜 스택에 푸시하는 역할을 수행하며, 자바스크립트 엔진의 역할은 콜 스택에 푸시된 함수(콜백함수)의 평가와 실행입니다. 즉, 비동기 프로그래밍은 브라우저와 자바스크립트 엔진 간의 상호작용을 통해 구현됩니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;참조&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous&quot;&gt;Asynchronous - MDN Web Docs&lt;/a&gt;
+&lt;a href=&quot;http://www.yes24.com/Product/Goods/92742567&quot;&gt;모던 자바스크립트 Deep Dive&lt;/a&gt; 를 읽고 이해한 내용을 바탕으로 작성한 글입니다.&lt;/p&gt;
+&lt;h1&gt;추가로 읽어볼 만한 글&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous&quot;&gt;Asynchronous JavaScript - MDN Web Docs&lt;/a&gt;&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
 &lt;/style&gt;</content:encoded></item></channel></rss>
