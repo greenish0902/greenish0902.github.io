@@ -1,4 +1,236 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 29 Jun 2022 14:47:48 GMT</lastBuildDate><item><title><![CDATA[합격과 불합격과 집념과 나]]></title><description><![CDATA[1번. 타입스크립트 챌린지 2일차 optional existence (?:), type alias (type ~), 함수의 반환값 타입 지정, readonly, tuple, any, void, never, unknown 개념을 배웠다. type…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220629/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220629/</guid><pubDate>Wed, 29 Jun 2022 02:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;1번. &lt;a href=&quot;https://www.notion.so/greenish0902/TS-2-d9448663062b4bda8decac6871e6305c&quot;&gt;타입스크립트 챌린지 2일차&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Jul 2022 13:50:19 GMT</lastBuildDate><item><title><![CDATA[7월이다!]]></title><description><![CDATA[TIL 타입스크립트 챌린지 4일차 원티드 프리온보딩 코스 등록완료 코딩테스트 구현 문제 풀이 (프로그래머스, LeetCode, BOJ) 문자열압축 기능개발 스킬트리 2개이하로 다른 비트 기둥과 보 설치 아기상어 102. Binary Tree Level…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</guid><pubDate>Fri, 01 Jul 2022 01:50:00 GMT</pubDate><content:encoded>&lt;h2&gt;TIL&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/TS-4-7ac4ab38becb4eedbfc6f52ec1f32561&quot;&gt;타입스크립트 챌린지 4일차&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;원티드 프리온보딩 코스 등록완료&lt;/li&gt;
+&lt;li&gt;코딩테스트 구현 문제 풀이 (프로그래머스, LeetCode, BOJ)
+&lt;ul&gt;
+&lt;li&gt;문자열압축&lt;/li&gt;
+&lt;li&gt;기능개발&lt;/li&gt;
+&lt;li&gt;스킬트리&lt;/li&gt;
+&lt;li&gt;2개이하로 다른 비트&lt;/li&gt;
+&lt;li&gt;기둥과 보 설치&lt;/li&gt;
+&lt;li&gt;아기상어&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-tree-level-order-traversal&quot;&gt;102. Binary Tree Level Order Traversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;기타: 더 풀어볼 문제들 &lt;a href=&quot;https://huchu.link/T05Tc0a&quot;&gt;https://huchu.link/T05Tc0a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2206&quot;&gt;벽 부수고 이동하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;내일, 화이팅!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[6월 마지막 날]]></title><description><![CDATA[타입스크립트 챌린지 3일차 call signature polymorphism; overloading…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220630/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220630/</guid><pubDate>Thu, 30 Jun 2022 02:30:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/greenish0902/TS-3-3cc36a8c5bfa42e3820187baf6356e94&quot;&gt;타입스크립트 챌린지 3일차&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;call signature&lt;/li&gt;
+&lt;li&gt;polymorphism; overloading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;백준 아기상어 (구현 중)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;구현 문제 위주로 연습하는 중이다. 아기상어 문제가 유사하다고 해서 풀어봤는데, 이 문제가 나왔으면 시간 내에 풀지 못했을 것 같다. 생각보다 어려웠고, 결국 풀이를 찾아봤고 아직도 완벽히 이해하지 못한 것 같다.&lt;/li&gt;
+&lt;li&gt;이해한 풀이를 정리해보자면,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;상어가 먹을 수 있는 먹이들의 위치를 파악하기 위해 BFS 탐색&lt;/li&gt;
+&lt;li&gt;가능한 시간(거리)를 최대화할 수 있는 탐색 경로를 고려해 탐색
+&lt;ul&gt;
+&lt;li&gt;이때, 동일 거리에서 어떤 먹이를 먼저 먹을지 우선순위 판단기준이 위, 왼쪽 순이므로
+&lt;ul&gt;
+&lt;li&gt;우선순위 큐&lt;/li&gt;
+&lt;li&gt;직접 이를 판단해서 우선순위에 위배되는 탐색을 종료하도록 구현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이 두가지 옵션 중 하나를 통해 풀이하는 것으로 갈린다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;내일 스스로 풀어보자!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[합격과 불합격과 집념과 나]]></title><description><![CDATA[1번. 타입스크립트 챌린지 2일차 optional existence (?:), type alias (type ~), 함수의 반환값 타입 지정, readonly, tuple, any, void, never, unknown 개념을 배웠다. type…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220629/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220629/</guid><pubDate>Wed, 29 Jun 2022 02:30:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;1번. &lt;a href=&quot;https://www.notion.so/greenish0902/TS-2-d9448663062b4bda8decac6871e6305c&quot;&gt;타입스크립트 챌린지 2일차&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;optional existence (?:), type alias (type ~), 함수의 반환값 타입 지정, readonly, tuple, any, void, never, unknown 개념을 배웠다. type은 마치 구조체처럼 타입을 정의해두고 재활용할 수 있다. tuple은 길이가 고정된 배열의 경우, 서로 다른 타입의 요소들이 한 배열 안에 존재하는 type을 미리 선언할 수 있다.&lt;/p&gt;
 &lt;p&gt;unknown은 직접 타입을 확인하는 과정을 거쳐야 하며, never는 처음 접해본 개념인지라 어떻게 하면 더 잘 쓸지 고민해볼 필요가 있다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2번. 원티드 프론트엔드 온보딩 지원&lt;/strong&gt;&lt;/p&gt;
