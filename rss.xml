@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Jul 2022 13:50:19 GMT</lastBuildDate><item><title><![CDATA[7월이다!]]></title><description><![CDATA[TIL 타입스크립트 챌린지 4일차 원티드 프리온보딩 코스 등록완료 코딩테스트 구현 문제 풀이 (프로그래머스, LeetCode, BOJ) 문자열압축 기능개발 스킬트리 2개이하로 다른 비트 기둥과 보 설치 아기상어 102. Binary Tree Level…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</guid><pubDate>Fri, 01 Jul 2022 01:50:00 GMT</pubDate><content:encoded>&lt;h2&gt;TIL&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jul 2022 14:59:55 GMT</lastBuildDate><item><title><![CDATA[회고]]></title><description><![CDATA[코딩테스트 2개로 보낸 주말. 스터디 in! 제대로 하자. 팀프로젝트 일정 다시 조율, 재시작!]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220702/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220702/</guid><pubDate>Sun, 03 Jul 2022 02:59:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;코딩테스트 2개로 보낸 주말.&lt;/li&gt;
+&lt;li&gt;스터디 in! 제대로 하자.&lt;/li&gt;
+&lt;li&gt;팀프로젝트 일정 다시 조율, 재시작!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[7월이다!]]></title><description><![CDATA[TIL 타입스크립트 챌린지 4일차 원티드 프리온보딩 코스 등록완료 코딩테스트 구현 문제 풀이 (프로그래머스, LeetCode, BOJ) 문자열압축 기능개발 스킬트리 2개이하로 다른 비트 기둥과 보 설치 아기상어 102. Binary Tree Level…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220701/</guid><pubDate>Fri, 01 Jul 2022 01:50:00 GMT</pubDate><content:encoded>&lt;h2&gt;TIL&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.notion.so/TS-4-7ac4ab38becb4eedbfc6f52ec1f32561&quot;&gt;타입스크립트 챌린지 4일차&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;원티드 프리온보딩 코스 등록완료&lt;/li&gt;
