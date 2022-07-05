@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Jul 2022 14:55:12 GMT</lastBuildDate><item><title><![CDATA[7월의 첫 월요일!]]></title><description><![CDATA[TIL 과제 리팩토링 useRef 훅으로 리팩토링: 프로젝트에 적용해서 실습해보자. useRoutes 를 통한 라우팅 적용: Routes 와 자율적으로 선택해서 진행한다. context 이용한 전역 Login 정보 확인: Context API…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220704/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220704/</guid><pubDate>Mon, 04 Jul 2022 14:48:00 GMT</pubDate><content:encoded>&lt;h3&gt;TIL&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Jul 2022 14:25:40 GMT</lastBuildDate><item><title><![CDATA[7월 5일 (화)]]></title><description><![CDATA[Today 리팩토링 진행: context API, useRef Context API 를 처음 사용했다. Context.Provider 에 value 태그로 내보내고자 하는 값을 부착해 사용하며, useContest 훅을 불러와서 export…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220705/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220705/</guid><pubDate>Tue, 05 Jul 2022 14:15:00 GMT</pubDate><content:encoded>&lt;h3&gt;Today&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;리팩토링 진행: context API, useRef
+&lt;ul&gt;
+&lt;li&gt;Context API 를 처음 사용했다. Context.Provider 에 value 태그로 내보내고자 하는 값을 부착해 사용하며, useContest 훅을 불러와서 export 해둔 context를 사용할 수 있다. 해당 Provider 태그로 감싼 하위 태그들에 모두 전해져 전역 상태처럼 사용 가능하므로, 로그인 로직, theme 등에 사용하기 유용하다. context API 자체에서 state 를 사용해 update 시킬 수 있어 수월했다. 포트폴리오에서 막막했던 부분인데 부착해 사용하면 라우팅 문제를 해결할 수 있게 된다. 외부에서 뜻밖의 수확을 얻게 되어 뿌듯하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;포트폴리오 프로젝트 작업 (feature/home)
+&lt;ul&gt;
+&lt;li&gt;utils 폴더 생성해서 하위 파일로 checkValid 함수를 분리했다. 다른 컴포넌트에서 재활용할 수 있도록 하나의 목적에 맞는 하나의 파일로 분리한 것이라 더 나은 코드라고 생각한다. 이를 try 문에서 불러와 사용하게끔 구현했다.&lt;/li&gt;
+&lt;li&gt;아직도 남아있는 문제점은, 로직에서 스타일링을 위한 class 를 건드는 부분, 에러를 발생시키는 부분, 메시지를 출력하는 부분이 계속 얽혀 반복적으로 발생한다는 것이다. 이 부분도 개선의 여지가 있으니 고민해보자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;클린 코드에 대한 간단한 서치
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/qkraudghgh/clean-code-javascript-ko&quot;&gt;gh readme&lt;/a&gt; 를 읽었다.&lt;/li&gt;
+&lt;li&gt;함수의 네이밍, 목적에 맞는 분리 두 가지가 가장 핵심적이면서도 중요하다는 생각이 든다.&lt;/li&gt;
+&lt;li&gt;평소 주석을 좋아하지 않지만 실무에서는 타인의 코드를 봐야 하므로 주석이 꽤 중요하다고 배웠다. 평소 전혀 쓰지 않는 주석을 좀 더 적극적으로 활용해야겠다고 생각했었는데, 클린코드를 읽고 가능한한 최소화하되, 직관적이지 못한 코드인 경우는 주석을 남겨두는 게 맞다는 쪽으로 생각을 정리해보게 됐다. 무릇 개발자라면 주석 없이도 코드를 해석 가능하도록 작성해야 하며, 그렇지 않다면 내 실력이 아직 직관적인 코드를 작성하기엔 부족해 한글로 설명을 보충할 수밖에 없는 게 되는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3&gt;보충해야 할 것&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;알고리즘 공부&lt;/li&gt;
+&lt;li&gt;TypeScript 챌린지&lt;/li&gt;
+&lt;li&gt;리팩토링 책&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[7월의 첫 월요일!]]></title><description><![CDATA[TIL 과제 리팩토링 useRef 훅으로 리팩토링: 프로젝트에 적용해서 실습해보자. useRoutes 를 통한 라우팅 적용: Routes 와 자율적으로 선택해서 진행한다. context 이용한 전역 Login 정보 확인: Context API…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220704/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220704/</guid><pubDate>Mon, 04 Jul 2022 14:48:00 GMT</pubDate><content:encoded>&lt;h3&gt;TIL&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;과제 리팩토링
 &lt;ul&gt;
