@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 Jul 2022 14:41:30 GMT</lastBuildDate><item><title><![CDATA[바쁜 수요일!]]></title><description><![CDATA[TIL 프로젝트 프로젝트 home 관련 컴포넌트 하위의 유효성검사 로직을 모두 완성했다. 어제 학습한 useContext 를 바탕으로 라우팅 처리를 완성했다. 아직 useContext…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220706/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220706/</guid><pubDate>Wed, 06 Jul 2022 14:30:00 GMT</pubDate><content:encoded>&lt;h3&gt;TIL&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Jul 2022 13:45:50 GMT</lastBuildDate><item><title><![CDATA[220707 TIL]]></title><description><![CDATA[TS 챌린지 7일차: 지금까지 배운 제네릭, 다형성, 클래스, 인터페이스를 모조리 사용하는 과제였다. LocalStorage, Geolocation API 를 이해하고 TypeScript 로 작성해야 했다. TS…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220707/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220707/</guid><pubDate>Thu, 07 Jul 2022 13:30:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;TS 챌린지 7일차: 지금까지 배운 제네릭, 다형성, 클래스, 인터페이스를 모조리 사용하는 과제였다. LocalStorage, Geolocation API 를 이해하고 TypeScript 로 작성해야 했다. TS 가 타입을 익히면 되는 부분이라 좀 쉽게 봤는데, C++을 접해봐서 망정이지 생각보다 CS적인 사고방식으로 접근해야 하는 영역인 것 같다. 시간을 좀 더 투자해야겠다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;프로젝트: 데이터베이스 명세서를 작성했다. form 에서 입력하는 데이터를 가지고 작성하면 되는 부분이라 생각보다 간단했는데, 데이터베이스를 마이페이지 쪽에서도 사용해야 하므로 그 부분을 좀 더 고려할 필요가 있는 것 같다. 어떻게 정규화하는 게 효율적일지! 접근이 잦은 필드와 그렇지 않은 필드 간 정규화 측면에서 생각해봐야겠다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;React + TypeScript 세팅을 처음 해보고, 이것저것 서치했다. 얼른 미니 프로젝트로 TS 익혀 둬야겠다!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2206&quot;&gt;boj 벽 부수고 이동하기&lt;/a&gt;를 푸는 중이다. 요약하자면 조건부로 재탐색 가능한 BFS인데, 전에 코딩테스트에서 못 풀어 아른거렸던 문제와 유사한 문제라 찾아 풀어봤다. 방문 처리를 까다롭게 해야 하는데, dist 값의 갱신 여부에 따라 판단해서 풀었더니 못 잡는 경우가 있는 것 같다. 테스트케이스나, 머릿속으로 그려본 로직상 문제는 없는데 시간초과로 넘어가질 못한다. 이 로직에서 구멍이 있다기보다는, 아예 이 로직으로 접근하는 것 자체가 잘못된 생각이었던 것 같은데… T-T 오늘은 너무 시간을 많이 써서 더 깊게 파진 못했다. 내일 고무오리 대신 아기상어와 함께 깊게 생각해 봐야지.&lt;/p&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;내일 보충할 거리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React + TS 사용법 : 작은 프로젝트 시도하며 익혀보기&lt;/li&gt;
+&lt;li&gt;프로젝트: 결제 연동, 위치값 추가&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2206&quot;&gt;boj 벽 부수고 이동하기&lt;/a&gt; 마무리&lt;/li&gt;
+&lt;li&gt;시간을 큼지막하게 할당하고, Task 단위로 집중해서 끝내자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[바쁜 수요일!]]></title><description><![CDATA[TIL 프로젝트 프로젝트 home 관련 컴포넌트 하위의 유효성검사 로직을 모두 완성했다. 어제 학습한 useContext 를 바탕으로 라우팅 처리를 완성했다. 아직 useContext…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/220706/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/220706/</guid><pubDate>Wed, 06 Jul 2022 14:30:00 GMT</pubDate><content:encoded>&lt;h3&gt;TIL&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;프로젝트&lt;/p&gt;
