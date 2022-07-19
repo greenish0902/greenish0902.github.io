@@ -1,27 +1,148 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 Jul 2022 14:57:54 GMT</lastBuildDate><item><title><![CDATA[금요일 이것저것]]></title><description><![CDATA[01. node.js address already in use 가동중인 포트가 없는데 오류가 나서 서치해보니 비정상적인 종료가 이루어진 경우 발생할 수 있다고 한다. 해결법 lsof -i…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0715/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0715/</guid><pubDate>Fri, 15 Jul 2022 14:57:00 GMT</pubDate><content:encoded>&lt;h3&gt;01. node.js address already in use&lt;/h3&gt;
-&lt;p&gt;가동중인 포트가 없는데 오류가 나서 서치해보니 비정상적인 종료가 이루어진 경우 발생할 수 있다고 한다.&lt;/p&gt;
-&lt;p&gt;해결법&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 Jul 2022 14:59:03 GMT</lastBuildDate><item><title><![CDATA[프로젝트]]></title><description><![CDATA[에러 로그 mysql path 찾기 node.js 서버를 가동할 때에 mysql 설치 경로에서 mysql.sock 을 연결할 수 있어야 하는데, 경로가 달라서 찾는데 시간이 걸렸다. https://stackoverflow.com/questions…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</guid><pubDate>Tue, 19 Jul 2022 03:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;에러 로그&lt;/h1&gt;
+&lt;h2&gt;mysql path 찾기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;node.js 서버를 가동할 때에 mysql 설치 경로에서 mysql.sock 을 연결할 수 있어야 하는데, 경로가 달라서 찾는데 시간이 걸렸다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/748478/cannot-find-mysql-sock&quot;&gt;https://stackoverflow.com/questions/748478/cannot-find-mysql-sock&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;슬라이더 오류&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;근 1달간 약 3번 슬라이더를 작업했는데, 할 때마다 CSS가 엉켜서 원하는 화면 구성까지 2시간정도는 그 작업만 계속 해야만 했다. &lt;code&gt;display: block !important&lt;/code&gt; 가 원인이었다. CSS 작업결과가 상단에서 중첩되어 버리면 하위 컴포넌트에서 UI 오류의 원인을 모르는, 최악의 경우가 발생할 수 있다. CSS 설계 중첩을 주의하자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;git&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;pull -&gt; merge -&gt; pull&lt;/li&gt;
+&lt;li&gt;처음에 pull 받은 걸 rebase 하느라 혼란을 겪었는데, merge를 하면 모든 히스토리가 아니라 가장 최근 코드만 당겨올 수 있다. 목적에 맞는 사용을 하면 된다.&lt;/li&gt;
+&lt;li&gt;fork 받은 후 다시 커밋하는 방법을 혼자 연습해봐야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;package.json&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yarn start: &quot;react-scripts start &amp;#x26; yarn run server&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;지난 프로젝트에서 배웠는데, 너무 편하다!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;recoil, react query 를 처음으로 사용했다.&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://greenish0902.notion.site/react-query-usage-37de2a3cbe7742f98bdea39d64e22a6e&quot;&gt;작성한 테스트 코드&lt;/a&gt;를 실행하며 많은 시행착오를 겪었는데, redux toolkit 만 알고 의존했던 개발 실력이 훌쩍 는 것 같아 기쁘다!&lt;/li&gt;
+&lt;li&gt;상태관리의 목적이 전역 상태 관리를 통해 개발자가 더 편안하게 코딩하는 것이라고 인식하고 있었는데, 클라이언트 - 서버 통신의 이유와 목적을 분명히 하고 사용하는 것이 올바른 방법임을 느꼈다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;오늘의 소감&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;2차 프로젝트 발표일 D-1이다. 지난주의 시행착오를 바탕으로 더 짜임새있는 태스크 분배와 운용을 할 수 있었다.&lt;/li&gt;
+&lt;li&gt;2주째 프로젝트를 하며, 기한을 코앞에 두고 사용해보지 않았던 기술을 사용해보는 게 스트레스 요인이기도 했지만 장점이 더 많음을 느낀다. 무엇보다 1. 재미가 있고, 2. 처음 보는 기술임에도 실력을 확 늘릴 수 있으며, 3. 하나하나 읽고 쓰며 직접 몰입해서 생각하고, 코딩할 수 있다. 공식문서를 보며 하나씩 학습하는 게 강의식으로 빠르게 예제 중심으로 학습하기보다 비효율적으로 보일 수도 있지만, 초반에 감만 확실히 잡으면 훨씬 재미있고 넓게 사고할 수 있다. 무엇보다 공식문서를 통해 개발된 오픈소스의 컨셉을 제대로 이해하는 것이 중요하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[0715]]></title><description><![CDATA[01. node.js address already in use 가동중인 포트가 없는데 오류가 나서 서치했다. 일반적으로 비정상적인 종료가 그 원인이다. 해결법 lsof -i :[포트번호] 를 입력해서 해당 포트를 차지하고 있는 프로세스의 PID…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0715/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0715/</guid><pubDate>Fri, 15 Jul 2022 14:57:00 GMT</pubDate><content:encoded>&lt;h3&gt;01. node.js address already in use&lt;/h3&gt;
+&lt;p&gt;가동중인 포트가 없는데 오류가 나서 서치했다. 일반적으로 비정상적인 종료가 그 원인이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;해결법&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;lsof -i :[포트번호]&lt;/code&gt; 를 입력해서 해당 포트를 차지하고 있는 프로세스의 PID 값을 확인한다.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;kill -9 [PID값]&lt;/code&gt; 으로 해당 프로세스를 강제종료한다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;02. React의 상태관리 라이브러리&lt;/h3&gt;
-&lt;p&gt;사용해보지 않은 상태관리 라이브러리 중, 빠르고 효율적인 학습이 가능하도록 러닝 커브가 낮고, 추후 발전 가능성이 있거나 트렌디한 라이브러리를 위주로 후보군을 좁혔다.&lt;/p&gt;
-&lt;p&gt;issue: client side 에서는 전역 상태관리할 일이 많지 않다.&lt;/p&gt;
+&lt;p&gt;사용해보지 않은 상태관리 라이브러리 중, 빠르고 효율적인 학습이 가능하도록 러닝 커브가 낮고, 추후 발전 가능성이 있거나 트렌디한 라이브러리를 위주로 후보군을 좁혔다. 처음에는 recoil만을 사용하려 했는데, 팀원분께서 이 프로젝트처럼 서버 측 데이터를 관리하는 경우 React Query 를 사용하는 것도 좋은 방법임을 알려주셨다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;issue: client side 에서는 전역 상태관리할 일이 많지 않다.&lt;/li&gt;
+&lt;li&gt;개선: client side: recoil / server side: react query 를 통한 상태관리를 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이번 프로젝트에서는 전역 상태, 서버 데이터가 모두 필요한 두 개의 페이지가 있으므로 recoil + React Query 를 쓰자는 결론을 내렸다.&lt;/p&gt;
+&lt;h4&gt;조사했던 것들&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.notion.so/Recoil-4adeb27248df432698935b7c1614f0a9&quot;&gt;Recoil&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.notion.so/react-query-9b96cda5c88b4980bbe0aa978465832d&quot;&gt;React-Query&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;server-side 에서의 상태관리&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.notion.so/react-query-9b96cda5c88b4980bbe0aa978465832d&quot;&gt;React-Query&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;03. TS를 왜 써야 할까?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;안정성&lt;/li&gt;
 &lt;li&gt;타입 이슈로 인한 에러의 가능성을 현저히 낮출 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;절대경로 import&lt;/h3&gt;
+&lt;h3&gt;04. 절대경로 import&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;각 컴포넌트가 위치한 폴더 내에 index.ts 를 설정하고, &lt;code&gt;export { default as 이름 } from &apos;./파일명&apos;&lt;/code&gt; 을 작성해두면 된다.&lt;/li&gt;
 &lt;li&gt;_&lt;code&gt;import_ 이름 _from_ &apos;@디렉토리명/파일명&apos;;&lt;/code&gt; 형식으로 사용 가능하다.&lt;/li&gt;
