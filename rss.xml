@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 Jul 2022 14:59:03 GMT</lastBuildDate><item><title><![CDATA[프로젝트]]></title><description><![CDATA[에러 로그 mysql path 찾기 node.js 서버를 가동할 때에 mysql 설치 경로에서 mysql.sock 을 연결할 수 있어야 하는데, 경로가 달라서 찾는데 시간이 걸렸다. https://stackoverflow.com/questions…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</guid><pubDate>Tue, 19 Jul 2022 03:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;에러 로그&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev Sh's RSS Feed]]></title><description><![CDATA[Sohui's Blog]]></description><link>https://gatsby-starter-apple.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Sep 2022 13:43:01 GMT</lastBuildDate><item><title><![CDATA[코딩을 지탱하는 기술 (1)]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/Books/01_코딩을_지탱하는_기술/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/Books/01_코딩을_지탱하는_기술/</guid><pubDate>Mon, 12 Sep 2022 03:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;프로그래밍 언어에는 다양한 개념이 왜 존재하고, 이런 개념들은 왜 탄생한 것일까? 이 책의 목적은 그 ‘왜&apos;를 알아내는 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;이 책을 읽는 목적&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;프로그래밍 언어에서 새로운 개념이 점차 등장하며 복잡해져 간 과정을 따라감으로써, 어떤 이유로 해당 기능이 필요했는지 깨우친다. 그 필요성과 쓰임새를 알게 됨으로써 비로소 어떻게 하면 잘 쓸 수 있는지 깨우치는 것이 목표이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;4장 처리 흐름 제어&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;while 문과 for 문&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;for 문을 사용하면 한 곳에서 세 개의 조건을 모두 확인할 수 있기 때문에 루프의 의도를 쉽게 파악할 수 있다.&lt;/li&gt;
+&lt;li&gt;함수형 프로그래밍에서 설계자의 코딩 목적을 명확히 이해해야 그것을 제 목적에 위배되지 않도록 적재적소에 활용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;5장 함수&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;함수가 가져다준 이점은 크게 &lt;strong&gt;(1) 코드의 직관적 파악, (2) 재사용성 &amp;#x26; 재귀 호출&lt;/strong&gt;이 있다. 책에서는 함수를 이래와 같이 말한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;코드의 일부를 한 덩어리로 잘라내어 그것에 이름을 붙이는 기능&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;함수는 호출해서 쓰이기 위해 만들어진다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;재귀 호출&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;함수는 재사용이 가능하므로, 재귀 호출을 통해서 구현하면 내포(nesting)형태의 처리를 구현할 수 있으며, 이때 호출하는 함수의 구조 또한 유사하게 nesting 된 구조로 실행하는 경우가 많다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;요약&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;한 그룹인 코드를 배내어 의미있는 이름을 붙여서, 그 코드가 무엇을 하고 있는지 파악하기 쉬워진다. 그리고 그 함수를 다른 장소에서 호출하여 사용함으로 재사용도 가능해진다.
+또한 함수를 사용함으로 ‘재귀 호출&apos;이라는 코딩 기술이 탄생했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;알게 된 점&lt;/h2&gt;
+&lt;p&gt;무엇이 더 나은 코드인지 고민하는 기준은 주관적이다. 프로그래밍 언어가 발전해온 ‘역사&apos;와 그것이 가져다준 이익을 따라감으로써 더 나은 코드의 요건을 어렴풋이 알 수 있었다. &lt;strong&gt;코드 작성자의 의도, 코드가 무슨 일을 하는지 (역할), 왜 하는지 (목적)을&lt;/strong&gt; 명확히 파악할 수 있는 것이 좋은 코드이다.&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[프로젝트]]></title><description><![CDATA[에러 로그 mysql path 찾기 node.js 서버를 가동할 때에 mysql 설치 경로에서 mysql.sock 을 연결할 수 있어야 하는데, 경로가 달라서 찾는데 시간이 걸렸다. https://stackoverflow.com/questions…]]></description><link>https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</link><guid isPermaLink="false">https://gatsby-starter-apple.netlify.app/blog/TIL/2207/0719/</guid><pubDate>Tue, 19 Jul 2022 03:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;에러 로그&lt;/h1&gt;
 &lt;h2&gt;mysql path 찾기&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;node.js 서버를 가동할 때에 mysql 설치 경로에서 mysql.sock 을 연결할 수 있어야 하는데, 경로가 달라서 찾는데 시간이 걸렸다.&lt;/li&gt;
